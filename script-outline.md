@@ -15,7 +15,7 @@
 
 * Roman elite discuss **growing external threats** and a rising cult in the city.
 * Concern over moral corruption: elite indulging in incest, orgies, and homosexuality.
-* Cassian, a slave master, is frustrated by the contempt of rival cities for the brutal crucifixion of Spartacus’s army.
+* Cassian, a slave master, loved Caesar and is frustrated by the contempt of rival cities for the brutal crucifixion of Spartacus’s army.
   **Dialogue:**
   **Cassian:** “That is outrageous. We have rules!”
   **Visuals:** Wide shot of palace, opulent but cold; close-ups on elite faces whispering unease.
