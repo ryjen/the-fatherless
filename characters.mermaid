@@ -1,0 +1,74 @@
+
+%% Character Arcs Across Acts
+%% Y-axis: Moral / Personal Growth (- = descent, + = growth)
+%% X-axis: Acts (I-IV)
+
+graph TB
+    subgraph Acts
+        A1[Act I] --> A2[Act II] --> A3[Act III] --> A4[Act IV]
+    end
+
+    %% Sael: Growth from innocence to moral authority
+    Sael((Sael)) 
+    SaelG1[+ Innocence / Unaware] 
+    SaelG2[++ Moral Guidance / Learning] 
+    SaelG3[+++ Leadership / Forgiveness] 
+    SaelG4[++++ Symbol of Moral Authority]
+
+    SaelG1 --> SaelG2 --> SaelG3 --> SaelG4
+    A1 --> SaelG1
+    A2 --> SaelG2
+    A3 --> SaelG3
+    A4 --> SaelG4
+
+    %% Cassian: Cruelty and hubris, ending in humiliation
+    Cassian((Cassian))
+    CassG1[- Ambition / Power] 
+    CassG2[-- Plotting / Moral Conflict] 
+    CassG3[--- Frustration / Revenge] 
+    CassG4[---- Humiliation / Political Loss]
+
+    CassG1 --> CassG2 --> CassG3 --> CassG4
+    A1 --> CassG1
+    A2 --> CassG2
+    A3 --> CassG3
+    A4 --> CassG4
+
+    %% Maro: Envy to redemption
+    Maro((Maro))
+    MaroG1[- Envy / Self-interest]
+    MaroG2[0 Moral Conflict]
+    MaroG3[+ Confession / Redemption]
+    MaroG4[++ Ally / Bridge]
+
+    MaroG1 --> MaroG2 --> MaroG3 --> MaroG4
+    A1 --> MaroG1
+    A2 --> MaroG2
+    A3 --> MaroG3
+    A4 --> MaroG4
+
+    %% Sael's Parents: Innocence to selfless foresight
+    Parents((Sael's Parents))
+    ParG1[0 Innocent / Oblivious]
+    ParG2[0 Confronted by Truth]
+    ParG3[+ Moral Sacrifice / Trust Cult]
+    ParG4[+ Legacy Shaping Sael]
+
+    ParG1 --> ParG2 --> ParG3 --> ParG4
+    A1 --> ParG1
+    A2 --> ParG2
+    A3 --> ParG3
+    A4 --> ParG4
+
+    %% Cult Leaders: Enduring morality
+    Cult((Cult Leaders))
+    CultG1[0 Persecuted / Persistent]
+    CultG2[+ Mentor Sael]
+    CultG3[+ Ethical Guidance / Strategy]
+    CultG4[++ Moral Backbone / Legacy]
+
+    CultG1 --> CultG2 --> CultG3 --> CultG4
+    A1 --> CultG1
+    A2 --> CultG2
+    A3 --> CultG3
+    A4 --> CultG4
