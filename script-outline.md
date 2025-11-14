@@ -11,11 +11,12 @@
 
 ### **Scene 1 – Ruling Class Debate**
 
-**Location:** Roman Palace – Council Hall
+**Location:** Aurelian Palace – Council Hall
 
-* Roman elite discuss **growing external threats** and a rising cult in the city.
+* The Aurelian Empire elite discuss **growing external threats** and a rising cult in the city.
 * Concern over moral corruption: elite indulging in incest, orgies, and homosexuality.
-* Cassian, a slave master, loved Caesar and is frustrated by the contempt of rival cities for the brutal crucifixion of Spartacus’s army.
+* The empire has just comdemned a brutal leader named Caelen as a dictator, but many still revere him despite his baldness as an indicator of indulgence.
+* Cassian, a slave master, is frustrated by the contempt of rival cities for the brutal crucifixions of a runaway gladiator's army.
 
 **Dialogue:**  
 **Cassian:** “That is outrageous. We have rules!”  
@@ -33,7 +34,7 @@
 * Arranges a “privilege” for them to conceive a child, secretly mocking them.
 
 **Dialogue:**  
-**Cassian:** “Rome will see its glory reborn, even in the innocence of the unknowing.”  
+**Cassian:** “Aurelia will see its glory reborn, even in the innocence of the unknowing.”  
 **Visuals:** Flickering torchlight, shadows on walls; close-ups of records, hands plotting.  
 **Symbolism:** Innocence used as a tool for cruelty; manipulation of fate.  
 
@@ -45,7 +46,7 @@
 
 * Maro envious of slave privilege to have a child.
 * Witnesses Cassian’s plan; inner conflict between envy and moral conscience.
-* Seeks guidance from friends in the cult to **offer knowledge of Sael’s conception**.
+* Seeks guidance from friends in a cult to **offer knowledge of Sael’s conception**.
 
 **Visuals:** Dimly lit corridors, Maro hesitates over letters and ledgers.  
 **Symbolism:** Human weakness as the precursor to moral awakening.
@@ -59,7 +60,7 @@
 * Cult learns of Sael’s conception and are perplexed who the father would be in roman society
 * they consider Sael a **fatherless conception**
 * They confront Sael’s parents, who consent to entrust Sael to the cult.
-* Sael becomes a **symbol of God’s purity and hope against elite cruelty**.
+* Sael becomes a **symbol of the creators purity and hope against elite cruelty**.
 
 **Visuals:** Close-ups of parents’ faces, cult leaders, and Sael’s innocent gaze.  
 **Symbolism:** Life born of evil becomes a symbol of good.
@@ -68,9 +69,10 @@
 
 ### **Scene 5 – Sael’s Departure**
 
-**Location:** Jewish outskirts
+**Location:** The Avarim outskirts
 
 * Cult arranges Sael’s upbringing away from Roman influence.
+* Another religious sect - the avarim live on the outskirts of the city agree to refuge
 * Parents watch him depart, hopeful yet fearful.
 
 **Visuals:** Wide shot of Sael leaving with cult followers; sunset backdrop.  
@@ -82,7 +84,8 @@
 
 **Location:** Cassian’s House
 
-* Cassian punishes Sael’s father in anger; his plan fails.
+* Cassian punishes Sael’s father in anger for the loss of Sael;
+* Cassian's plan fails; his political ambition thwarted
 
 **Visuals:** Close-up of Cassian’s clenched fists; burning ledger of failed schemes.  
 **Symbolism:** Hubris vs. the uncontrollable flow of fate.
@@ -109,7 +112,7 @@
 
 **Location:** Temple / Secret Learning Rooms
 
-* Sael learns kindness, Stoicism, Judaism, and Eastern philosophies.
+* Sael learns kindness, and teachings from other religions and philosophies.
 * Moral foundation is established; his **forgiveness becomes central to his character**.
 
 **Visuals:** Candles, books, small fires of learning; Sael absorbing lessons.  
@@ -121,11 +124,11 @@
 
 **Location:** Cult Assembly
 
-* Leaders reveal Sael’s **true birth**, presenting him as a **symbol of one God**.
+* Leaders reveal Sael’s **true birth**, presenting him as a **symbol of one father creator**.
 * Sael struggles with grief and responsibility but accepts a destiny that may end in death.
 
 **Dialogue:**  
-**Cult Leader:** “You are fatherless, yet the world shall see in you the hand of God.”  
+**Cult Leader:** “You are fatherless, yet the world shall see in you the hand of the creator.”  
 **Visuals:** Close-ups on Sael’s conflicted expression; dim light highlighting hope and fear.  
 **Symbolism:** Innocence confronting truth; moral duty vs. personal desire.
 
@@ -137,7 +140,7 @@
 
 ### **Scene 12 – Sael Confronts Cassian**
 
-**Location:** Roman outskirts
+**Location:** Avarim outskirts
 
 * Sael seeks peace; Cassian attempts to reclaim him.
 * Sael refuses: “I am fatherless.”
@@ -150,10 +153,10 @@
 
 ### **Scene 13 – Cassian’s Revenge Fails**
 
-**Location:** Roman Council
+**Location:** Aurelian Council
 
 * Cassian petitions elite rulers; they **deny him**, shaming him politically.
-* Sael gains freedom to live among Jews.
+* Sael gains freedom to live among Avarim.
 
 **Visuals:** Wide shots of council chamber; Cassian isolated.  
 **Symbolism:** Hubris exposed; morality triumphs.
@@ -162,7 +165,7 @@
 
 ### **Scene 14 – Sael’s Miracle**
 
-**Location:** Roman Streets
+**Location:** Aurelian Streets
 
 * Sael spreads the cult’s message, performs moral acts, gains followers.
 * Harassed occasionally; Maro acts as liaison.
@@ -176,9 +179,9 @@
 
 **Location:** Sael’s camp
 
-* Kings visit to honor Sael; Romans see it as spectacle.
+* Kings visit to honor Sael; Aurelianians see it as spectacle.
 
-**Visuals:** Camels, ornate gifts, whispers of Roman elite.  
+**Visuals:** Camels, ornate gifts, whispers of Aurelian elite.  
 **Symbolism:** Moral recognition challenges political power.
 
 ---
@@ -223,7 +226,7 @@
 **Location:** City Square
 
 * Sael arrested, displayed in a torture device, wearing **crown of thorns**.
-* Crowd reacts in awe and shock; Roman society is split.
+* Crowd reacts in awe and shock; Aurelian society is split.
 
 **Visuals:** Wide shots of crowd; close-ups on Sael calm and resolute.  
 **Symbolism:** Moral triumph challenged; public test of forgiveness.
@@ -238,7 +241,7 @@
 
 **Location:** Cult Temple
 
-* Sael’s disciples spread his teachings; moral truth of one God contrasted with Roman corruption.
+* Sael’s disciples spread his teachings; moral truth of one creator contrasted with Aurelian corruption.
 
 **Visuals:** Flickering candles, whispered sermons, small crowds.  
 **Symbolism:** Ethical authority spreading like fire.
@@ -271,7 +274,7 @@
 
 ### **Scene 23 – The Crucifixion**
 
-**Location:** Streets leading to Jewish camp
+**Location:** Streets leading to Avarim camp
 
 * Sael carries his crucifix, wears crown of thorns, forgives all.
 
@@ -284,9 +287,9 @@
 
 ### **Scene 24 – Post-Death Legacy**
 
-**Location:** City Streets / Jewish Camp
+**Location:** City Streets / Avarim Camp
 
-* Children sing about the “Jewish king”; Cassian enraged but powerless.
+* Children sing about the “an Avarim king”; Cassian enraged but powerless.
 * Cult leaders preach quietly; Sael’s moral legacy endures.
 
 **Visuals:** Tracking shots of children; cult leaders whispering in shadows.  
