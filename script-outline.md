@@ -292,3 +292,8 @@
 **Visuals:** Tracking shots of children; cult leaders whispering in shadows.  
 **Symbolism:** Life and morality outlast cruelty; hope endures.
 
+---
+
+## Notice
+
+This repository is public for reference only. All contents are copyright © 2025 Robert Ryan Jennings and are protected under international copyright law. Any use without permission is prohibited.
