@@ -57,7 +57,7 @@
 
 **Location:** Cult Hideout / Temple
 
-* Cult learns of Sael’s conception and are perplexed who the father would be in roman society
+* Cult learns of Sael’s conception and are perplexed who the father would be in Aurelian society
 * they consider Sael a **fatherless conception**
 * They confront Sael’s parents, who consent to entrust Sael to the cult.
 * Sael becomes a **symbol of the creators purity and hope against elite cruelty**.
