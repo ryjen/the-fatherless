@@ -14,8 +14,8 @@
 **Location:** Aurelian Palace – Council Hall
 
 * The Aurelian Empire elite discuss **growing external threats** and a rising cult in the city.
-* Concern over moral corruption: elite indulging in incest, orgies, and homosexuality.
-* The empire has just condemned a brutal leader named Caelar as a dictator, but many still revere him despite his baldness as an indicator of indulgence.
+* Concern over moral corruption exists with rivals: elite indulging in incest, orgies, and homosexuality.
+* The empire has just condemned a brutal leader named Caelar as a dictator who took over the city, but many still revere him despite his baldness as an indicator of indulgence.
 * Cassian, a slave master, is frustrated by the contempt of rival cities for the brutal crucifixions of a runaway gladiator's army.
 
 **Dialogue:**  
