@@ -208,7 +208,7 @@
 
 * Cassian is humiliated
 * Ruling elite order him to resolve their relations with the kings
-* Casssian plots Sael’s execution as an illegitimate slave king.
+* Cassian plots Sael’s execution as an illegitimate slave king.
 
 **Visuals:** Shadowed chamber, torchlight flickering on Cassian’s furious face.  
 **Symbolism:** Cruelty to restore order; prelude to public punishment.
