@@ -259,7 +259,7 @@
 
 ---
 
-### **Scene 21 – Rome’s Defense**
+### **Scene 21 – Aurelia's Defense**
 
 **Location:** Senate / City Square
 
