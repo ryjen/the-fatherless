@@ -252,7 +252,6 @@
 
 * Sael’s disciples continue to spread his teachings; 
 * moral truth of one creator contrasted with Aurelian corruption
-* Punishment of Sael has not had popular effect like Caelans death; showing as weakness
 
 **Visuals:** Flickering candles, whispered sermons, small crowds.  
 **Symbolism:** Ethical authority spreading like fire.
@@ -263,8 +262,9 @@
 
 **Location:** Senate / City Square
 
+* Punishment of Sael has not had popular effect like Caelans death; showing as weakness
 * Ruling elite are tired of executing people; want a king for all instead
-* Cassian proposes crucifying Sael to appease gods and restore order.
+* Cassian proposes crucifying Sael as a king to appease gods and restore order.
 
 **Visuals:** Wide shots of Senate; Cassian pleased with framing.  
 **Symbolism:** Political expediency vs. moral authority.
