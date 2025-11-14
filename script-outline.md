@@ -43,7 +43,8 @@
 
 **Location:** Cassian’s House / Slave Quarters
 
-* Maro witnesses Cassian’s plan; inner conflict between envy and moral conscience.
+* Maro envious of slave privilege to have a child.
+* Witnesses Cassian’s plan; inner conflict between envy and moral conscience.
 * Seeks guidance from friends in the cult to **offer knowledge of Sael’s conception**.
 
 **Visuals:** Dimly lit corridors, Maro hesitates over letters and ledgers.  
@@ -55,7 +56,8 @@
 
 **Location:** Cult Hideout / Temple
 
-* Cult learns of Sael’s **fatherless conception**.
+* Cult learns of Sael’s conception and are perplexed who the father would be in roman society
+* they consider Sael a **fatherless conception**
 * They confront Sael’s parents, who consent to entrust Sael to the cult.
 * Sael becomes a **symbol of God’s purity and hope against elite cruelty**.
 
