@@ -8,7 +8,7 @@
 
 **Conflict:**
 
-* Must grapple with the trauma of his origin, the expectations of the cult, and the hostility of Roman elites.
+* Must grapple with the trauma of his origin, the expectations of the cult, and the hostility of Aurelian elites.
 * Struggles to reconcile the desire for normal life with his symbolic role.
 
 **Growth / Transformation:**
@@ -34,7 +34,7 @@
 
 **Starting Point:**
 
-* Ambitious, morally conflicted Roman elite. Obsessed with status, political power, and revenge.
+* Ambitious, morally conflicted Aurelian elite. Obsessed with status, political power, and revenge.
 * Engages in cruelty to maintain control and the illusion of glory.
 
 **Conflict:**
@@ -65,7 +65,7 @@
 
 **Starting Point:**
 
-* Young Roman servant; participates in elite indulgences.
+* Young Aurelian servant; participates in elite indulgences.
 * Envious of Sael’s “privilege” in birth and opportunity.
 
 **Conflict:**
@@ -76,7 +76,7 @@
 **Growth / Transformation:**
 
 * Confesses knowledge to the cult, seeking redemption.
-* Becomes a guide and link between Sael and Roman society.
+* Becomes a guide and link between Sael and Aurelian society.
 * Learns humility and responsibility for his envy.
 
 **Ending State:**
@@ -125,12 +125,12 @@
 
 **Starting Point:**
 
-* Persecuted moral and spiritual community, resisting Roman immorality.
+* Persecuted moral and spiritual community, resisting Aurelian immorality.
 
 **Conflict:**
 
 * Need a symbol of hope to inspire their followers.
-* Must navigate Roman threats, cult secrecy, and the ethical raising of Sael.
+* Must navigate Aurelian threats, cult secrecy, and the ethical raising of Sael.
 
 **Growth / Transformation:**
 
@@ -154,6 +154,6 @@
 
 * **Sael vs. Cassian:** Moral integrity vs. political cruelty.
 * **Maro vs. Self:** Envy vs. conscience.
-* **Cult vs. Rome:** Moral authority vs. systemic power.
+* **Cult vs. Aurelia:** Moral authority vs. systemic power.
 * **Parents vs. Fate:** Innocence exploited; yet they shape hope.
 

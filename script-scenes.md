@@ -8,7 +8,7 @@
 
 **Scene 1 – The Empire’s Decadence**
 
-* **Location:** Roman elite palace
+* **Location:** Aurelian elite palace
 * **Action:** Cassian and elite rulers indulge in opulent feasts, masks, and orgies. Servants shuffle silently around.
 * **Dialogue Cue:** Whispered critiques of moral decay: “They think no one sees them…”
 * **Symbolism:** Power disconnected from humanity; cruelty normalized
@@ -54,7 +54,7 @@
   **Camera / Visuals:**
 * Close-up on Maro’s face, eyes flicking between records and shadows of servants.
 * Candlelight casts elongated shadows, emphasizing moral tension.
-  **Symbolism:** The corrupt privilege of Rome versus Maro’s emerging conscience.
+  **Symbolism:** The corrupt privilege of Aurelia versus Maro’s emerging conscience.
 
 ---
 
@@ -80,7 +80,7 @@
 **Action:**
 
 * Cult members examine the records Maro brought.
-* Confused about Sael’s father in Roman law, but see the potential **symbol of freedom and purity**.
+* Confused about Sael’s father in Aurelian law, but see the potential **symbol of freedom and purity**.
 * Decide to confront Sael’s parents to seek permission for Sael to join the cult.
   **Dialogue Cue:**
 * Cult Leader: “A child born of cruelty… yet untainted. Could he be the sign we’ve awaited?”
@@ -94,7 +94,7 @@
 
 ### **Scene 8 – Sael’s Departure**
 
-**Location:** Jewish community outskirts of the city
+**Location:** Avarim community outskirts of the city
 **Action:**
 
 * Cult arranges Sael’s safety among supportive community members.
@@ -108,7 +108,7 @@
 
 ### **Scene 9 – Cassian’s Luck**
 
-**Location:** Palace, Roman streets
+**Location:** Palace, Aurelian streets
 **Action:**
 
 * Cassian realizes Sael is out of his reach; plot to blame slaves fails.
@@ -128,7 +128,7 @@
 
 * Sael grows into adolescence/young adulthood.
 * Explores **Stoicism, Judaism, Eastern philosophies (Buddhism)**.
-* Cult worried about integration with Roman society and moral influence.
+* Cult worried about integration with Aurelian society and moral influence.
   **Dialogue Cue:**
 * Sael: “Forgiveness is not weakness… it is the only path to freedom.”
   **Camera / Visuals:**
@@ -161,7 +161,7 @@
 
 ### **Scene 12 – Sael Confronts Cassian**
 
-**Location:** Roman outskirts / cult’s safe house
+**Location:** Aurelian outskirts / cult’s safe house
 **Action:**
 
 * Sael seeks peace for himself and the cult with Cassian.
@@ -169,7 +169,7 @@
 * Sael calmly denies him:
   **Sael:** “I am fatherless.”
 * Cassian laughs cruelly:
-  **Cassian:** “There is no other way for you. You belong to me, to Rome, to its rules.”
+  **Cassian:** “There is no other way for you. You belong to me, to Aurelia, to its rules.”
 * Sael responds with quiet, infuriating forgiveness:
   **Sael:** “You spoiled my plans, ownership… and you wonder if I can forgive you?”
   **Camera / Visuals:**
@@ -180,12 +180,12 @@
 
 ### **Scene 13 – Cassian’s Revenge Fails**
 
-**Location:** Roman elite council
+**Location:** Aurelian elite council
 **Action:**
 
 * Cassian petitions the ruling elite to reclaim Sael.
 * The elite are disturbed by Cassian’s obsession and **refuse him**.
-* Cassian is **shamed politically**; Sael is free to live among the Jews.
+* Cassian is **shamed politically**; Sael is free to live among the Avarim.
   **Camera / Visuals:**
 * Wide shot of council hall, Cassian isolated and flustered.
 * Close-ups on the elite’s disapproving faces.
@@ -195,13 +195,13 @@
 
 ### **Scene 14 – Sael’s Miracle**
 
-**Location:** Roman streets, markets, synagogues
+**Location:** Aurelian streets, markets, synagogues
 **Action:**
 
 * Sael engages with society, spreading the cult’s teachings.
 * His story of evading slavery draws followers.
 * Occasionally harassed by Cassian’s guards or elite supporters.
-* Sael works to lead followers **out of Roman control**, remaining a Jew in identity but unknown as the cult’s symbolic child.
+* Sael works to lead followers **out of Aurelian control**, remaining an Avarim in identity but unknown as the cult’s symbolic child.
 * Maro serves as a **liaison**, guiding him through society.
   **Camera / Visuals:**
 * Tracking shots through crowded streets; soft light highlights Sael’s calm demeanor.
@@ -212,15 +212,15 @@
 
 ### **Scene 15 – Three Kings Arrive**
 
-**Location:** Sael’s camp / outskirts of Rome
+**Location:** Sael’s camp / outskirts of Aurelia
 **Action:**
 
 * Through years of correspondence, the cult arranges for **three kings** to witness Sael.
-* Romans see it as circus entertainment, but elite rulers are disturbed by the political and symbolic implications.
+* Aurelians see it as circus entertainment, but elite rulers are disturbed by the political and symbolic implications.
   **Camera / Visuals:**
 * Wide shot of kings arriving on camels, ornate gifts in hand.
-* Close-ups on elite Romans whispering in fear.
-  **Symbolism:** Moral authority challenges Roman hierarchy.
+* Close-ups on elite Aurelians whispering in fear.
+  **Symbolism:** Moral authority challenges Aurelian hierarchy.
 
 ---
 
@@ -229,13 +229,13 @@
 **Location:** Sael’s camp
 **Action:**
 
-* Roman leaders demand the kings’ audience:
-  **Romans:** “How dare you come to our land and not seek our counsel? Is this child a king?”
+* Aurelian leaders demand the kings’ audience:
+  **Aurelians:** “How dare you come to our land and not seek our counsel? Is this child a king?”
 * Kings respond diplomatically:
   **King 1:** “We came seeking peace, and found it in this child. We bring gifts in gratitude for his life.”
   **Camera / Visuals:**
 * Wide pan of gifts and Sael calmly accepting them.
-* Close-up on Roman leaders, flustered and humiliated.
+* Close-up on Aurelian leaders, flustered and humiliated.
   **Symbolism:** Recognition of moral legitimacy over political power.
 
 ---
@@ -246,9 +246,9 @@
 **Action:**
 
 * Elite leaders blame Cassian for public embarrassment.
-* Humiliated, he devises **Sael’s execution**, framing him as illegitimate and a threat to Roman order.
+* Humiliated, he devises **Sael’s execution**, framing him as illegitimate and a threat to Aurelian order.
   **Dialogue Cue:**
-  **Cassian:** “If Rome cannot be respected, it will be feared. The child will pay… even if I deliver him myself.”
+  **Cassian:** “If Aurelia cannot be respected, it will be feared. The child will pay… even if I deliver him myself.”
   **Camera / Visuals:**
 * Low-angle on Cassian pacing in torchlight; shadows on walls emphasizing his rage.
   **Symbolism:** Cruelty used to restore perceived honor; foreshadowing public punishment.
@@ -272,16 +272,16 @@
 
 ### **Scene 19 – Public Punishment (Crucifixion Foreshadowing)**
 
-**Location:** Roman city square, crowded with citizens and soldiers
+**Location:** Aurelian city square, crowded with citizens and soldiers
 **Action:**
 
 * Sael continues teaching publicly; guards arrest him for cult affiliation.
 * He is placed in a public torture device; the full truth of his **birth and cult ties** is displayed.
 * For his **incestuous conception and popularity**, he is fitted with a **crown of thorns**, echoing Bald Julius Caesar imagery.
-* The crowd reacts with astonishment; Roman society becomes divided.
+* The crowd reacts with astonishment; Aurelian society becomes divided.
   **Camera / Visuals:**
 * Wide shots of the square, tension palpable.
-* Close-ups on Sael, calm and accepting; followers, horrified; elite Romans, enraged.
+* Close-ups on Sael, calm and accepting; followers, horrified; elite Aurelians, enraged.
 * Torches flicker across his face, highlighting **innocence amid cruelty**.
   **Symbolism:** Moral triumph challenged by political cruelty; foreshadowing crucifixion and Sael’s ultimate symbolic legacy.
 
@@ -298,10 +298,10 @@
 **Action:**
 
 * Cult leaders capitalize on **the 3 kings’ recognition** of Sael.
-* Sael’s disciples spread the message: **Sael is born of one God, a God who loves all**, and the **moral corruption of Rome is no path to salvation**.
+* Sael’s disciples spread the message: **Sael is born of one God, a God who loves all**, and the **moral corruption of Aurelia is no path to salvation**.
 * Public sermons, clandestine gatherings, and whispered teachings begin to **inspire the populace**.
   **Dialogue Cue:**
-  **Disciple:** “The child born of cruelty shows us the path of forgiveness and moral strength. Follow him, and Rome’s corruption cannot claim you.”
+  **Disciple:** “The child born of cruelty shows us the path of forgiveness and moral strength. Follow him, and Aurelia’s corruption cannot claim you.”
   **Camera / Visuals:**
 * Medium shots of disciples speaking to small crowds; flickering torches highlight the urgency.
 * Close-ups of attentive listeners, some skeptical, some inspired.
@@ -309,16 +309,16 @@
 
 ---
 
-### **Scene 21 – Rome’s Defense**
+### **Scene 21 – Aurelia’s Defense**
 
-**Location:** Roman Senate / city square
+**Location:** Aurelian Senate / city square
 **Action:**
 
-* Rome grows weary of recurring slave revolts and cult defiance.
+* Aurelia grows weary of recurring slave revolts and cult defiance.
 * Proposal made: crucify the “slave king” Sael as **both punishment and spectacle**—a warning to all others, appeasing the gods, and restoring order.
-* Sael’s execution is framed as **representing Roman vanity and corruption**, turning the moral victory of the child into a controlled political act.
+* Sael’s execution is framed as **representing Aurelian vanity and corruption**, turning the moral victory of the child into a controlled political act.
   **Dialogue Cue:**
-  **Roman Senator:** “Let this slave bear the weight of all others. Rome will be secure. The gods demand it.”
+  **Aurelian Senator:** “Let this slave bear the weight of all others. Aurelia will be secure. The gods demand it.”
   **Camera / Visuals:**
 * Wide shots of Senate chambers, tense assembly.
 * Medium shots of Cassian smiling subtly, satisfied with the framing of Sael as scapegoat.
@@ -328,13 +328,13 @@
 
 ### **Scene 22 – Cult and Sael Decide**
 
-**Location:** Cult headquarters / outskirts of Rome
+**Location:** Cult headquarters / outskirts of Aurelia
 **Action:**
 
-* The cult is weakened in public perception; their protests are limited by Roman authority.
+* The cult is weakened in public perception; their protests are limited by Aurelian authority.
 * The 3 kings, invested in peace and trade, will accept any resolution.
 * Maro pleads with Sael:
-  **Maro:** “Your sacrifice is the only way to show Rome its sin… and to honor the one God who gave you life.”
+  **Maro:** “Your sacrifice is the only way to show Aurelia its sin… and to honor the one God who gave you life.”
 * Sael, fully aware of his destiny, **accepts the role**, seeking to reconcile human cruelty with divine forgiveness.
   **Camera / Visuals:**
 * Close-up on Sael, determined yet serene.
@@ -345,7 +345,7 @@
 
 ### **Scene 23 – The Crucifixion**
 
-**Location:** Roman streets, leading to Jewish camp
+**Location:** Aurelian streets, leading to Avarim camp
 **Action:**
 
 * Cassian orchestrates a **long parade**, forcing Sael to carry his own crucifix for all to witness.
@@ -354,7 +354,7 @@
   **Dialogue Cue:**
   **Sael (to the crowd):** “You may punish my body, but my spirit forgives. Let mercy guide your hearts.”
   **Camera / Visuals:**
-* Wide shots of Roman soldiers, crowds, and cult followers watching in shock.
+* Wide shots of Aurelian soldiers, crowds, and cult followers watching in shock.
 * Close-ups: Sael’s serene face; thorns digging into skin; Maro watching, guilt and awe in his eyes.
   **Symbolism:** Forgiveness triumphing over cruelty; ultimate moral witness.
 
@@ -362,10 +362,10 @@
 
 ### **Scene 24 – Post-Death Legacy**
 
-**Location:** Roman streets / city square / Jewish camp
+**Location:** Aurelian streets / city square / Avarim camp
 **Action:**
 
-* Children run through the streets, singing about the “Jewish king” Sael.
+* Children run through the streets, singing about the “Avarim king” Sael.
 * Cassian yells in anger, powerless to stop the **moral impact of the child’s life and sacrifice**.
 * Cult leaders quietly preach in corners, teaching **forgiveness, moral courage, and resistance to corruption**, now embedded as a subtle “new normal.”
   **Camera / Visuals:**

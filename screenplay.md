@@ -12,8 +12,8 @@
 
 ### **Scene 1 – Ruling Class Debate**
 
-**Location:** Roman Palace – Council Hall – Day
-**Action:** The elite discuss growing external threats and a rising cult in the city. Moral corruption runs rampant: incest, orgies, and homosexuality in the ruling class. Cassian, a slave master, is frustrated by rival cities contempt for the brutal crucifixion of Spartacus’s army.
+**Location:** Aurelian Palace – Council Hall – Day
+**Action:** The elite discuss growing external threats and a rising cult in the city. Moral corruption runs rampant: incest, orgies, and homosexuality in the ruling class. Cassian, a slave master, is frustrated by rival cities contempt for the brutal crucifixion of a runaway slave army.
 
 **Dialogue:**
 **Cassian** (disgusted): “That is outrageous. We have rules!”
@@ -34,7 +34,7 @@
 **Action:** Cassian, drunk from an orgy, resents being scorned. He pores over slave records and identifies a mother and son unaware of their relation. He arranges a “privilege” for them to conceive a child, mocking them secretly.
 
 **Dialogue:**
-**Cassian** (to himself): “Rome will see its glory reborn, even in the innocence of the unknowing.”
+**Cassian** (to himself): “Aurelia will see its glory reborn, even in the innocence of the unknowing.”
 
 **Visuals / Camera:**
 
@@ -76,8 +76,8 @@
 
 ### **Scene 5 – Sael’s Departure**
 
-**Location:** Jewish Outskirts – Dawn
-**Action:** The cult arranges Sael’s upbringing away from Roman influence. Parents watch as he departs, hopeful yet fearful.
+**Location:** Avarim Outskirts – Dawn
+**Action:** The cult arranges Sael’s upbringing away from Aurealian influence. Parents watch as he departs, hopeful yet fearful.
 
 **Visuals / Camera:**
 
@@ -159,7 +159,7 @@
 
 ### **Scene 12 – Sael Confronts Cassian**
 
-**Location:** Roman Outskirts – Day
+**Location:** Aurelian Outskirts – Day
 **Action:** Sael attempts reconciliation; Cassian tries to reclaim him. Sael refuses, calling himself fatherless. Cassian mocks, Sael forgives.
 
 **Dialogue:**
@@ -177,8 +177,8 @@
 
 ### **Scene 13 – Cassian’s Revenge Fails**
 
-**Location:** Roman Council – Day
-**Action:** Cassian petitions rulers; denied. Sael is free among Jews.
+**Location:** Aurelian Council – Day
+**Action:** Cassian petitions rulers; denied. Sael is free among Avarim.
 
 **Visuals / Camera:**
 
@@ -190,7 +190,7 @@
 
 ### **Scene 14 – Sael’s Miracle**
 
-**Location:** Roman Streets – Day
+**Location:** Aurealian Streets – Day
 **Action:** Sael spreads the cult’s teachings. Harassed occasionally; Maro acts as liaison.
 
 **Visuals / Camera:**
@@ -204,11 +204,11 @@
 ### **Scene 15 – Three Kings Arrive**
 
 **Location:** Sael’s Camp – Day
-**Action:** Kings visit; Romans see spectacle.
+**Action:** Kings visit; Aurealians see spectacle.
 
 **Visuals / Camera:**
 
-* Camels, gifts, whispers of Roman elite.
+* Camels, gifts, whispers of Aurelian elite.
 
 **Symbolism:** Moral recognition challenges political power.
 
@@ -277,7 +277,7 @@
 ### **Scene 20 – Cult’s Counter**
 
 **Location:** Cult Temple – Day
-**Action:** Disciples spread Sael’s teachings; moral truth over Roman corruption.
+**Action:** Disciples spread Sael’s teachings; moral truth over Aurelian corruption.
 
 **Visuals / Camera:**
 
@@ -287,10 +287,10 @@
 
 ---
 
-### **Scene 21 – Rome’s Defense**
+### **Scene 21 – Aurealian Defense**
 
 **Location:** Senate / City Square – Day
-**Action:** Romans propose crucifying Sael to appease gods.
+**Action:** Aurelians propose crucifying Sael to appease gods.
 
 **Visuals / Camera:**
 
@@ -304,7 +304,7 @@
 
 **Location:** Cult Headquarters – Day
 **Dialogue:**
-**Maro:** “Your sacrifice shows Rome its sins. Let mercy guide them.”
+**Maro:** “Your sacrifice shows Aurelia its sins. Let mercy guide them.”
 
 **Visuals / Camera:**
 
@@ -316,7 +316,7 @@
 
 ### **Scene 23 – The Crucifixion**
 
-**Location:** Streets leading to Jewish Camp – Day
+**Location:** Streets leading to Avarim Camp – Day
 **Action:** Sael carries crucifix, wears crown of thorns, forgives all.
 
 **Dialogue:**
@@ -332,8 +332,8 @@
 
 ### **Scene 24 – Post-Death Legacy**
 
-**Location:** City Streets / Jewish Camp – Day
-**Action:** Children sing about “Jewish king.” Cassian enraged but powerless. Cult leaders preach quietly; Sael’s legacy endures.
+**Location:** City Streets / Avarim Camp – Day
+**Action:** Children sing about “Avarim king.” Cassian enraged but powerless. Cult leaders preach quietly; Sael’s legacy endures.
 
 **Visuals / Camera:**
 

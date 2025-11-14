@@ -2,14 +2,15 @@
 
 ### **Scene 1 – The Empire’s Decadence & Political Tension**
 
-**Location:** Roman elite palace, golden hall, torches flickering, long table of rulers and advisors.
+**Location:** Aurelian elite palace, golden hall, torches flickering, long table of rulers and advisors.
 
 **Action / Story Beats:**
 
 * The ruling class discusses growing **external threats**, specifically a **cult in the city** gaining influence among commoners.
-* They mock the cult’s moral critiques of the empire, claiming that **Roman rulers are all inbred and too cruel to rule**, reinforcing their elitist sense of superiority.
-* Debate turns to **Spartacus**: the runaway gladiator slave whose army was **crucified mile by mile** after capture.
-* Neighboring kings view this as excessive, questioning Roman morality; rulers argue that Rome’s brutality is justified, but some fear external judgment.
+* They mock the cult’s moral critiques of the empire, claiming that **Aurelian rulers are all inbred and too cruel to rule**, reinforcing their elitist sense of superiority.
+* Debate turns to the runaway gladiator slave whose army was **crucified mile by mile** after capture.
+* Neighboring kings view this as excessive, questioning Aurelian morality; rulers argue that Aurelia’s brutality is justified, but some fear external judgment.
+* The senators have recently executed a popular leader for brutal takeover of Aurelia; his baldness a sign of the kings contempt for indulgance
 * Cassian visibly winces, morally disgusted:
   **Cassian:** “That is outrageous. We have rules… even for slaves. This… this is madness.”
 * Elite rulers laugh dismissively, showing the **gap between cruelty and conscience**.

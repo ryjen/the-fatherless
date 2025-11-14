@@ -8,11 +8,11 @@
 
 * Cassian **stumbles back drunk** from the palace, his toga disheveled, still hearing echoes of laughter and music from the elite halls.
 * He reflects bitterly on his **reputation among peers**: criticized for being “too strict” as a slave master, too intolerant for his own taste.
-* **Inner monologue / voiceover (optional):** “They mock me for enforcing discipline… yet I see the weakness of this city. I will remind them why Rome is feared.”
+* **Inner monologue / voiceover (optional):** “They mock me for enforcing discipline… yet I see the weakness of this city. I will remind them why Aurelia is feared.”
 * In the slave quarters, he **unrolls ledgers and family records**, methodically scanning names and relations, revealing a mother and son unaware of their connection.
 * Cassian **schemes with deliberate cruelty**: he arranges them to “earn a reward” for their loyalty and hard work.
 * **Dialogue Cue (Cassian, sinisterly cordial):**
-  “You have served well. Rome wishes to honor your diligence… a reward worthy of distinction.”
+  “You have served well. Aurelia wishes to honor your diligence… a reward worthy of distinction.”
 * Cassian manipulates the situation, **allowing and arranging their conception**, presenting it as a **privilege akin to what the elite receive**.
 * **Camera / Visuals:**
 

@@ -15,7 +15,7 @@
 
 * The Aurelian Empire elite discuss **growing external threats** and a rising cult in the city.
 * Concern over moral corruption: elite indulging in incest, orgies, and homosexuality.
-* The empire has just comdemned a brutal leader named Caelen as a dictator, but many still revere him despite his baldness as an indicator of indulgence.
+* The empire has just condemned a brutal leader named Caelar as a dictator, but many still revere him despite his baldness as an indicator of indulgence.
 * Cassian, a slave master, is frustrated by the contempt of rival cities for the brutal crucifixions of a runaway gladiator's army.
 
 **Dialogue:**  
@@ -72,7 +72,7 @@
 **Location:** The Avarim outskirts
 
 * Cult arranges Sael’s upbringing away from Aurelian influence.
-* Another religious sect - the Avarim live on the outskirts of the city agree to refuge
+* Another religious sect - the Avarim - live on the outskirts of the city agree to give refuge
 * Parents watch him depart, hopeful yet fearful.
 
 **Visuals:** Wide shot of Sael leaving with cult followers; sunset backdrop.  
@@ -180,7 +180,7 @@
 **Location:** Sael’s camp
 
 * the cult has dispatched correspondence with neighboring cities.
-* Kings visit to honor Sael; Aurelianians see it as spectacle.
+* Kings visit to honor Sael; Aurelians see it as spectacle.
 * Ruling elite see it as an insult
 
 **Visuals:** Camels, ornate gifts, whispers of Aurelian elite.  
@@ -234,7 +234,7 @@
 
 * Sael arrested, displayed in a torture device
 * A tablet explains the truth of Saels birth and cult association as a false Avarim king
-* a  **crown of thorns** is placed on his head in mockery of being Caelen the dictator was good
+* a  **crown of thorns** is placed on his head in mockery of being Caelar the dictator was good
 * Crowd reacts in awe and shock; Aurelian society is split.
 
 **Visuals:** Wide shots of crowd; close-ups on Sael calm and resolute.  
@@ -262,7 +262,7 @@
 
 **Location:** Senate / City Square
 
-* Punishment of Sael has not had popular effect like Caelans death; showing as weakness
+* Punishment of Sael has not had popular effect like Caelars death; showing as weakness
 * Ruling elite are tired of executing people; want a king for all instead
 * Cassian proposes crucifying Sael as a king to appease gods and restore order.
 
@@ -306,9 +306,3 @@
 
 **Visuals:** Tracking shots of children; cult leaders whispering in shadows.  
 **Symbolism:** Life and morality outlast cruelty; hope endures.
-
----
-
-## Notice
-
-This repository is public for reference only. All contents are copyright © 2025 Robert Ryan Jennings and are protected under international copyright law. Any use without permission is prohibited.
