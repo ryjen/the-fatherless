@@ -278,7 +278,7 @@
 * Sael accepts **destiny**, guided by Maro and disciples.
 
 **Dialogue:**  
-**Maro:** “Your sacrifice shows Rome its sins. Let mercy guide them.”  
+**Maro:** “Your sacrifice shows Aurelia its sins. Let mercy guide them.”  
 **Visuals:** Close-ups on Sael’s serene expression.  
 **Symbolism:** Acceptance of moral duty; confrontation with destiny.
 
