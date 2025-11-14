@@ -3,9 +3,9 @@
 
 **Genre:** Historical Drama / Moral Epic
 
-**Prequel:** [The Fatherless: Age of Embers](./prequel)
+**Prequel:** [The Fatherless: Age of Embers](./prequel/)
 
-**Sequel:** [The Fatherless II: Neurion]
+**Sequel:** [The Fatherless II: Neurion](./sequel/)
 
 ---
 
