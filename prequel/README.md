@@ -5,8 +5,8 @@
 Earth is locked in the **late Pleistocene ice age**.
 Europe is a continent of white desolation—endless tundra, violent winds, and predators larger, faster, and better adapted than the humans who cling to survival. What is now France is an unforgiving frozen plain where food is scarce, tools are primitive, and death is constant.
 
-Humanity has been driven north by catastrophe:
-**Africa—the cradle of life—has turned dry and inhospitable** as shifting climate patterns force migrations across continents. The people have moved toward Europe seeking new life, but have instead found cold, hunger, and fear.
+**Africa—the cradle of life—is a place of lush vegitation and abundant water**. Humans populations can overbalance existence with apex predators.
+Tribes of humans fight for rights to known places of survival - and have pushed other tribes north into France.
 
 Humans live and die by fire.
 They fight to keep it alive more fiercely than they fight beasts.
