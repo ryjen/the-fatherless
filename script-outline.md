@@ -220,7 +220,7 @@
 **Location:** Dungeon
 
 * Cassian tortures Maro about Sael
-* Betraya taht he gave Sael to the cult; not the Avarim
+* Confesses he gave Sael to the cult; not the Avarim
 * Maro becomes unwittingly instrumental in Sael’s capture.
 
 **Visuals:** Close-ups of Maro’s pain; flickering torchlight.  
