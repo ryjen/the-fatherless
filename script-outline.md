@@ -60,7 +60,7 @@
 * Cult learns of Sael’s conception and are perplexed who the father would be in Aurelian society
 * they consider Sael a **fatherless conception**
 * They confront Sael’s parents, who consent to entrust Sael to the cult.
-* Sael becomes a **symbol of the creators purity and hope against elite cruelty**.
+* Sael becomes a **symbol of the creators purity and hope against elite cruelty**
 
 **Visuals:** Close-ups of parents’ faces, cult leaders, and Sael’s innocent gaze.  
 **Symbolism:** Life born of evil becomes a symbol of good.
@@ -179,7 +179,9 @@
 
 **Location:** Sael’s camp
 
+* the cult has dispatched correspondence with neighboring cities.
 * Kings visit to honor Sael; Aurelianians see it as spectacle.
+* Ruling elite see it as an insult
 
 **Visuals:** Camels, ornate gifts, whispers of Aurelian elite.  
 **Symbolism:** Moral recognition challenges political power.
@@ -190,6 +192,7 @@
 
 **Location:** Sael’s camp
 
+* Ruling elite demand audience with the kings for the insult
 * Kings assert peace and recognition of Sael’s symbolic significance.
 
 **Dialogue:**  
@@ -203,7 +206,9 @@
 
 **Location:** Palace
 
-* Cassian is humiliated; plots Sael’s execution as an illegitimate slave king.
+* Cassian is humiliated
+* Ruling elite order him to resolve their relations with the kings
+* Casssian plots Sael’s execution as an illegitimate slave king.
 
 **Visuals:** Shadowed chamber, torchlight flickering on Cassian’s furious face.  
 **Symbolism:** Cruelty to restore order; prelude to public punishment.
@@ -214,7 +219,9 @@
 
 **Location:** Dungeon
 
-* Cassian tortures Maro; Maro becomes unwittingly instrumental in Sael’s capture.
+* Cassian tortures Maro about Sael
+* Betraya taht he gave Sael to the cult; not the Avarim
+* Maro becomes unwittingly instrumental in Sael’s capture.
 
 **Visuals:** Close-ups of Maro’s pain; flickering torchlight.  
 **Symbolism:** Betrayal entwined with conscience; unavoidable confrontation.
@@ -225,7 +232,9 @@
 
 **Location:** City Square
 
-* Sael arrested, displayed in a torture device, wearing **crown of thorns**.
+* Sael arrested, displayed in a torture device
+* A tablet explains the truth of Saels birth and cult association as a false Avarim king
+* a  **crown of thorns** is placed on his head in mockery of being Caelen the dictator was good
 * Crowd reacts in awe and shock; Aurelian society is split.
 
 **Visuals:** Wide shots of crowd; close-ups on Sael calm and resolute.  
@@ -241,7 +250,9 @@
 
 **Location:** Cult Temple
 
-* Sael’s disciples spread his teachings; moral truth of one creator contrasted with Aurelian corruption.
+* Sael’s disciples continue to spread his teachings; 
+* moral truth of one creator contrasted with Aurelian corruption
+* Punishment of Sael has not had popular effect like Caelans death showing as weakness
 
 **Visuals:** Flickering candles, whispered sermons, small crowds.  
 **Symbolism:** Ethical authority spreading like fire.
@@ -252,7 +263,8 @@
 
 **Location:** Senate / City Square
 
-* Romans propose crucifying Sael to appease gods and restore order.
+* Ruling elite are tired of executing people; want a king for all instead
+* Cassian proposes crucifying Sael to appease gods and restore order.
 
 **Visuals:** Wide shots of Senate; Cassian pleased with framing.  
 **Symbolism:** Political expediency vs. moral authority.
