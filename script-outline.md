@@ -71,8 +71,8 @@
 
 **Location:** The Avarim outskirts
 
-* Cult arranges Sael’s upbringing away from Roman influence.
-* Another religious sect - the avarim live on the outskirts of the city agree to refuge
+* Cult arranges Sael’s upbringing away from Aurelian influence.
+* Another religious sect - the Avarim live on the outskirts of the city agree to refuge
 * Parents watch him depart, hopeful yet fearful.
 
 **Visuals:** Wide shot of Sael leaving with cult followers; sunset backdrop.  
