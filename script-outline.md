@@ -252,7 +252,7 @@
 
 * Sael’s disciples continue to spread his teachings; 
 * moral truth of one creator contrasted with Aurelian corruption
-* Punishment of Sael has not had popular effect like Caelans death showing as weakness
+* Punishment of Sael has not had popular effect like Caelans death; showing as weakness
 
 **Visuals:** Flickering candles, whispered sermons, small crowds.  
 **Symbolism:** Ethical authority spreading like fire.
