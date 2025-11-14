@@ -2,7 +2,7 @@
 # **Prequel Summary — *The Fatherless: Age of Embers***
 
 **Year ~21,760 BCE.**
-Earth is locked in the **late Pleistocene ice age**.
+Earth is locked in the **late Pleistocene ice age** (the previous age of Pisces to Sael).
 Europe is a continent of white desolation—endless tundra, violent winds, and predators larger, faster, and better adapted than the humans who cling to survival. What is now France is an unforgiving frozen plain where food is scarce, tools are primitive, and death is constant.
 
 **Africa—the cradle of life—is a place of lush vegitation and abundant water**. Humans populations can overbalance existence with apex predators.
