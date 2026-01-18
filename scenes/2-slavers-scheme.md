@@ -2,6 +2,8 @@
 
 ### **Scene 2 – The Slaver’s Scheme**
 
+Drafting references: [drafting/screenplay-scenes-1-5.md](../drafting/screenplay-scenes-1-5.md), [drafting/screenplay-outline.md](../drafting/screenplay-outline.md)
+
 **Location:** Slave quarters, dimly lit, remnants of the previous night’s orgy in the palace visible from afar.
 
 **Action / Story Beats:**

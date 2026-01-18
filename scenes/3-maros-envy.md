@@ -2,6 +2,8 @@
 
 # **Scene 3 – Maro’s Envy (Detailed Cinematic Version)**
 
+Drafting references: [drafting/screenplay-scenes-1-5.md](../drafting/screenplay-scenes-1-5.md), [drafting/screenplay-outline.md](../drafting/screenplay-outline.md)
+
 **Location:** Cassian’s House / Slave Quarters
 **Time:** Late Night, after Scene 2
 

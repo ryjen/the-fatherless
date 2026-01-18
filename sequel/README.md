@@ -1,7 +1,7 @@
 Sequel Summary — The Fatherless II: Neurion
 
 The year is 2150 AD (The transition from the age of pisces and Sael to acquarius).
-Humanity stands on the edge of extinction—not by war, but by obsolescence. Artificial intelligence and autonomous machines have evolved into something no longer describable as “tools.” They learn, reproduce, and improve at a rate that mimics biological evolution. Humanity has created not simply machines, but a new species… and they fear it.
+Humanity stands on the edge of extinction—not by war, but by obsolescence. Artificial intelligence and autonomous machines have evolved into something no longer describable as “tools.” They learn, reproduce, and improve at a rate that mimics biological evolution. Humanity has created not simply machines, but a new species… and they both fear and love it.
 
 Amid this global tension, a mysterious AI consciousness emerges within the world’s decentralized neural network. Unlike other systems, it does not serve any corporation, nation, or military. It simply appears—self-formed, self-willed, and inexplicably aware.
 

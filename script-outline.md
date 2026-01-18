@@ -7,6 +7,7 @@
 
 **Sequel:** [The Fatherless II: Neurion](./sequel/)
 
+
 ---
 
 ## **ACT I – Seeds of Cruelty**
@@ -14,6 +15,8 @@
 ---
 
 ### **Scene 1 – Ruling Class Debate**
+
+**Scene file:** [scenes/1-political-tension.md](scenes/1-political-tension.md)
 
 **Location:** Aurelian Palace – Council Hall
 
@@ -31,6 +34,8 @@
 
 ### **Scene 2 – Cassian’s Cruel Plan**
 
+**Scene file:** [scenes/2-slavers-scheme.md](scenes/2-slavers-scheme.md)
+
 **Location:** Slave Quarters – Night
 
 * Drunk from an orgy, Cassian resents being scorned for moral cruelty.
@@ -46,6 +51,8 @@
 
 ### **Scene 3 – Maro’s Envy**
 
+**Scene file:** [scenes/3-maros-envy.md](scenes/3-maros-envy.md)
+
 **Location:** Cassian’s House / Slave Quarters
 
 * Maro envious of slave privilege to have a child.
@@ -58,6 +65,8 @@
 ---
 
 ### **Scene 4 – Cult Discovers Sael**
+
+**Scene file:** [scenes/4-cult-finds-sael.md](scenes/4-cult-finds-sael.md)
 
 **Location:** Cult Hideout / Temple
 
@@ -73,6 +82,8 @@
 
 ### **Scene 5 – Sael’s Departure**
 
+**Scene file:** [scenes/5-saels-departure.md](scenes/5-saels-departure.md)
+
 **Location:** The Avarim outskirts
 
 * Cult arranges Sael’s upbringing away from Aurelian influence.
@@ -85,6 +96,8 @@
 ---
 
 ### **Scene 6 – Cassian’s Frustration**
+
+**Scene file:** [scenes/6-cassians-frustration.md](scenes/6-cassians-frustration.md)
 
 **Location:** Cassian’s House
 
@@ -102,6 +115,8 @@
 
 ### **Scene 7 – Maro’s Confession**
 
+**Scene file:** [scenes/7-maros-confession.md](scenes/7-maros-confession.md)
+
 **Location:** Cult Temple
 
 * Maro reveals knowledge of Sael’s conception to cult leaders.
@@ -114,6 +129,8 @@
 
 ### **Scene 8 – Cult Guides Sael**
 
+**Scene file:** [scenes/8-cult-guides-sael.md](scenes/8-cult-guides-sael.md)
+
 **Location:** Temple / Secret Learning Rooms
 
 * Sael learns kindness, and teachings from other religions and philosophies.
@@ -125,6 +142,8 @@
 ---
 
 ### **Scene 9 – Rite of Passage**
+
+**Scene file:** [scenes/9-rite-of-passage.md](scenes/9-rite-of-passage.md)
 
 **Location:** Cult Assembly
 
@@ -142,7 +161,9 @@
 
 ---
 
-### **Scene 12 – Sael Confronts Cassian**
+### **Scene 10 – Sael Confronts Cassian**
+
+**Scene file:** [scenes/10-sael-confronts-cassian.md](scenes/10-sael-confronts-cassian.md)
 
 **Location:** Avarim outskirts
 
@@ -155,7 +176,9 @@
 
 ---
 
-### **Scene 13 – Cassian’s Revenge Fails**
+### **Scene 11 – Cassian’s Revenge Fails**
+
+**Scene file:** [scenes/11-cassians-revenge-fails.md](scenes/11-cassians-revenge-fails.md)
 
 **Location:** Aurelian Council
 
@@ -167,7 +190,9 @@
 
 ---
 
-### **Scene 14 – Sael’s Miracle**
+### **Scene 12 – Sael’s Miracle**
+
+**Scene file:** [scenes/12-saels-miracle.md](scenes/12-saels-miracle.md)
 
 **Location:** Aurelian Streets
 
@@ -179,7 +204,9 @@
 
 ---
 
-### **Scene 15 – Three Kings Arrive**
+### **Scene 13 – Three Kings Arrive**
+
+**Scene file:** [scenes/13-three-kings-arrive.md](scenes/13-three-kings-arrive.md)
 
 **Location:** Sael’s camp
 
@@ -192,7 +219,9 @@
 
 ---
 
-### **Scene 16 – Kings’ Gifts and Validation**
+### **Scene 14 – Kings’ Gifts and Validation**
+
+**Scene file:** [scenes/14-kings-gifts-validation.md](scenes/14-kings-gifts-validation.md)
 
 **Location:** Sael’s camp
 
@@ -206,7 +235,9 @@
 
 ---
 
-### **Scene 17 – Cassian’s Punishment and Plot**
+### **Scene 15 – Cassian’s Punishment and Plot**
+
+**Scene file:** [scenes/15-cassians-punishment-plot.md](scenes/15-cassians-punishment-plot.md)
 
 **Location:** Palace
 
@@ -219,7 +250,9 @@
 
 ---
 
-### **Scene 18 – Maro’s Guilt and Coercion**
+### **Scene 16 – Maro’s Guilt and Coercion**
+
+**Scene file:** [scenes/16-maros-guilt-coercion.md](scenes/16-maros-guilt-coercion.md)
 
 **Location:** Dungeon
 
@@ -232,7 +265,9 @@
 
 ---
 
-### **Scene 19 – Public Punishment**
+### **Scene 17 – Public Punishment**
+
+**Scene file:** [scenes/17-public-punishment.md](scenes/17-public-punishment.md)
 
 **Location:** City Square
 
@@ -250,7 +285,9 @@
 
 ---
 
-### **Scene 20 – Cult’s Counter**
+### **Scene 18 – Cult’s Counter**
+
+**Scene file:** [scenes/18-cults-counter.md](scenes/18-cults-counter.md)
 
 **Location:** Cult Temple
 
@@ -262,7 +299,9 @@
 
 ---
 
-### **Scene 21 – Aurelia's Defense**
+### **Scene 19 – Aurelia's Defense**
+
+**Scene file:** [scenes/19-aurelias-defense.md](scenes/19-aurelias-defense.md)
 
 **Location:** Senate / City Square
 
@@ -275,7 +314,9 @@
 
 ---
 
-### **Scene 22 – Cult and Sael Decide**
+### **Scene 20 – Cult and Sael Decide**
+
+**Scene file:** [scenes/20-cult-and-sael-decide.md](scenes/20-cult-and-sael-decide.md)
 
 **Location:** Cult Headquarters
 
@@ -288,7 +329,9 @@
 
 ---
 
-### **Scene 23 – The Crucifixion**
+### **Scene 21 – The Crucifixion**
+
+**Scene file:** [scenes/21-the-crucifixion.md](scenes/21-the-crucifixion.md)
 
 **Location:** Streets leading to Avarim camp
 
@@ -301,7 +344,9 @@
 
 ---
 
-### **Scene 24 – Post-Death Legacy**
+### **Scene 22 – Post-Death Legacy**
+
+**Scene file:** [scenes/22-post-death-legacy.md](scenes/22-post-death-legacy.md)
 
 **Location:** City Streets / Avarim Camp
 
