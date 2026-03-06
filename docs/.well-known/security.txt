@@ -1,0 +1,7 @@
+Contact: mailto:security@thefatherless.example
+Contact: https://example.com/security
+Expires: 2027-03-06T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://example.com/.well-known/security.txt
+Policy: https://example.com/security-policy
+Acknowledgments: https://example.com/security-acknowledgments
