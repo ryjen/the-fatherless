@@ -27,6 +27,9 @@ The room is quiet except for the soft dripping of water from the ceiling cracks.
 She frowns, conflicted but deeply moved.
 
 **SAHMIA:**
+“All across Aurelian society, people whisper and argue. No one agrees on who the child’s father is.”
+
+**SAHMIA:**
 “But why? Why *this* pairing?”
 
 **ELDER BENIO (oldest):**
@@ -257,4 +260,3 @@ Fade out.
 * Shame transformed into hope
 * The cult’s moral superiority vs Roman cruelty
 * Sael’s symbolic destiny begins with compassion
-
