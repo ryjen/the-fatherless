@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Fatherless: Age of Embers | Prequel</title>
+    <meta
+      name="description"
+      content="The Fatherless: Age of Embers is the prequel era of survival, where Atuun leads fractured tribes from frozen desolation toward warmth and the first fatherless myth."
+    />
+    <meta name="theme-color" content="#0f1723" />
+
+    <style>
+      :root {
+        --bg: #0f1723;
+        --bg-soft: #172335;
+        --panel: #152131;
+        --text: #f6eddd;
+        --muted: #d8c8b0;
+        --accent: #e09a48;
+        --accent-soft: #9ec2dc;
+        --line: #36485f;
+        --shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+        --radius: 14px;
+      }
+
+      * { box-sizing: border-box; }
+
+      html,
+      body {
+        margin: 0;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-size: 17px;
+        line-height: 1.7;
+        background:
+          radial-gradient(circle at 15% 10%, rgba(158, 194, 220, 0.16), transparent 42%),
+          radial-gradient(circle at 85% 0%, rgba(224, 154, 72, 0.2), transparent 36%),
+          linear-gradient(180deg, #0f1723 0%, #141f2f 35%, #0d1521 100%);
+        color: var(--text);
+      }
+
+      a { color: var(--accent); text-underline-offset: 2px; }
+      a:hover, a:focus-visible { color: #f2b46b; }
+
+      .skip-link {
+        position: absolute;
+        left: 0.5rem;
+        top: -3rem;
+        background: var(--accent);
+        color: #20150d;
+        padding: 0.6rem 0.8rem;
+        border-radius: 0.5rem;
+        z-index: 999;
+      }
+
+      .skip-link:focus { top: 0.5rem; }
+
+      .frame {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 1.25rem;
+      }
+
+      header {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background:
+          linear-gradient(130deg, rgba(158, 194, 220, 0.14), rgba(23, 35, 53, 0.9) 56%, rgba(63, 41, 25, 0.82)),
+          var(--bg-soft);
+        box-shadow: var(--shadow);
+        padding: 1.75rem;
+      }
+
+      .eyebrow {
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0;
+        font-size: 0.83rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.2;
+        margin: 0.5rem 0 0.7rem;
+      }
+
+      h1 { font-size: clamp(2rem, 5vw, 3.3rem); }
+
+      .subtitle {
+        margin: 0;
+        color: var(--muted);
+        max-width: 72ch;
+      }
+
+      .tagline {
+        color: #efd6b8;
+        font-style: italic;
+      }
+
+      .top-nav {
+        margin-top: 0.85rem;
+        padding: 0.55rem 0 0.15rem;
+      }
+
+      .top-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem 1rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .top-nav li {
+        display: block;
+      }
+
+      .top-nav a {
+        display: inline-block;
+        border: 0;
+        padding: 0.15rem 0;
+        text-decoration: none;
+        color: var(--muted);
+        border-bottom: 1px solid transparent;
+      }
+
+      .top-nav a:hover,
+      .top-nav a:focus-visible {
+        color: var(--accent);
+        border-bottom-color: var(--accent);
+      }
+
+      main {
+        display: grid;
+        gap: 1.2rem;
+        margin-top: 1.2rem;
+      }
+
+      .grid {
+        display: grid;
+        gap: 1.2rem;
+      }
+
+      @media (min-width: 860px) {
+        .grid { grid-template-columns: 1fr 1fr; }
+      }
+
+      section,
+      aside {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: linear-gradient(170deg, rgba(158, 194, 220, 0.08), rgba(255, 255, 255, 0.01) 45%, transparent 70%), var(--panel);
+        padding: 1.15rem;
+        color: #f2e9da;
+      }
+
+      .pill {
+        display: inline-block;
+        border: 1px solid #855933;
+        color: #f7d7b5;
+        border-radius: 999px;
+        padding: 0.2rem 0.6rem;
+        margin-right: 0.35rem;
+        margin-bottom: 0.35rem;
+        font-size: 0.85rem;
+      }
+
+      .split {
+        display: grid;
+        gap: 1rem;
+      }
+
+      @media (min-width: 860px) {
+        .split { grid-template-columns: 1fr 1fr; }
+      }
+
+      .stat {
+        border-left: 3px solid var(--accent);
+        padding-left: 0.75rem;
+        color: #e4d2bc;
+      }
+
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        margin-top: 0.6rem;
+      }
+
+      .series-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        margin-top: 0.8rem;
+      }
+
+      .series-link {
+        display: inline-block;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 0.4rem 0.85rem;
+        text-decoration: none;
+        background: rgba(0, 0, 0, 0.25);
+      }
+
+      .editions-grid {
+        display: grid;
+        gap: 1.1rem;
+      }
+
+      @media (min-width: 860px) {
+        .editions-grid { grid-template-columns: 1fr 1fr; }
+      }
+
+      .edition-card {
+        border: 1px solid #4e6881;
+        border-radius: 12px;
+        padding: 1.1rem;
+        background:
+          linear-gradient(180deg, rgba(158, 194, 220, 0.12), rgba(224, 154, 72, 0.08) 45%, rgba(0, 0, 0, 0.16)),
+          #1a2738;
+      }
+
+      .kicker {
+        margin: 0;
+        color: #e8ccb0;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        font-size: 0.78rem;
+      }
+
+      .edition-list { margin-top: 0.5rem; padding-left: 1rem; }
+
+      .view-toggle {
+        display: inline-flex;
+        gap: 0.5rem;
+        margin: 0.4rem 0 1rem;
+        padding: 0.2rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      .tab-btn {
+        border: 1px solid transparent;
+        border-radius: 999px;
+        padding: 0.4rem 0.8rem;
+        background: transparent;
+        color: var(--muted);
+        font: inherit;
+        cursor: pointer;
+      }
+
+      .tab-btn[aria-selected="true"] {
+        color: #22160d;
+        background: linear-gradient(180deg, #f0bd78, #d48c40);
+      }
+
+      .view-panel[hidden] { display: none; }
+
+      .button {
+        display: inline-block;
+        padding: 0.55rem 0.9rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--accent);
+        text-decoration: none;
+        color: #23170d;
+        background: linear-gradient(180deg, #f0bd78, #d48c40);
+        font-weight: 700;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--accent);
+      }
+
+      .links ul { margin: 0; padding-left: 1rem; }
+
+      .visual-grid {
+        display: grid;
+        gap: 1rem;
+      }
+
+      @media (min-width: 760px) {
+        .visual-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      .visual-card {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.2);
+        padding: 0.7rem;
+        max-width: 360px;
+        margin: 0 auto;
+      }
+
+      .visual-thumb {
+        height: 190px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.24);
+        border: 1px solid var(--line);
+        overflow: hidden;
+      }
+
+      .visual-card img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        display: block;
+      }
+
+      .visual-card figcaption {
+        margin-top: 0.55rem;
+        font-size: 0.92rem;
+        color: var(--muted);
+      }
+
+      .footer {
+        margin: 1rem 0 2rem;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: linear-gradient(170deg, rgba(158, 194, 220, 0.08), rgba(0, 0, 0, 0.2));
+        box-shadow: var(--shadow);
+        padding: 0.9rem 1rem;
+        color: var(--muted);
+        text-align: center;
+        font-size: 0.95rem;
+      }
+
+      :focus-visible { outline: 2px solid #f2b46b; outline-offset: 2px; }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="frame">
+      <header>
+        <p class="eyebrow">Prequel / Survival Epic</p>
+        <h1>The Fatherless: Age of Embers</h1>
+        <p class="subtitle">
+          Born under a sky of fire in the late ice age, Atuun leads fractured tribes across lethal white desolation
+          toward warmth, unity, and the earliest fatherless legacy.
+        </p>
+        <p class="subtitle">
+          This era establishes a deep lineage context where power, bloodline, and secrecy are weaponized across
+          generations.
+        </p>
+        <p class="tagline">"We were born of warmth. We must return to it."</p>
+        <div class="series-links" aria-label="Trilogy landing links">
+          <a class="series-link" href="../index.html">Main Story: The Fatherless</a>
+          <a class="series-link" href="../sequel/">Sequel: Neurion</a>
+        </div>
+
+      </header>
+      <nav class="top-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#logline">Overview</a></li>
+          <li><a href="#book-film">Adaptation</a></li>
+          <li><a href="#characters">Characters</a></li>
+          <li><a href="#world">World</a></li>
+          <li><a href="#analysis">Interpretive Analysis</a></li>
+          <li><a href="#editions">Pitch</a></li>
+          <li><a href="#visuals">Visual Concepts</a></li>
+          <li><a href="#materials">Files</a></li>
+        </ul>
+      </nav>
+
+      <main id="main-content">
+        <section id="logline" aria-labelledby="logline-heading">
+          <h2 id="logline-heading">Overview</h2>
+          <p>
+            During a catastrophic ice-age winter, Atuun, a child marked by the Sky-Fire omen, challenges frozen
+            tradition and leads rival tribes south through hunger, predators, and sacrifice to restore human life in
+            warmer lands.
+          </p>
+          <p>
+            <span class="pill">Prehistoric Survival</span>
+            <span class="pill">Mythic Origin</span>
+            <span class="pill">Migration Epic</span>
+            <span class="pill">Leadership by Mercy</span>
+          </p>
+        </section>
+
+        <section id="book-film" aria-labelledby="book-film-heading">
+          <h2 id="book-film-heading">Adaptation</h2>
+          <div class="split">
+            <article aria-labelledby="book-heading">
+              <h3 id="book-heading">Novel Adaptation Angle</h3>
+              <p>
+                The prequel excels as atmospheric historical fiction: ritual memory, clan conflict, and Atuun's inner
+                burden create a character-first narrative of belief under extinction pressure.
+              </p>
+              <p class="stat">Best fit: prestige prehistoric novel with mythic-philosophical depth.</p>
+            </article>
+            <article aria-labelledby="film-heading">
+              <h3 id="film-heading">Film Adaptation Angle</h3>
+              <p>
+                The story is inherently cinematic: blood-red auroras, wind-carved tundra, torchlit caves, and mass
+                migration set pieces driven by fire, weather, and survival stakes.
+              </p>
+              <p class="stat">Best fit: large-scale survival drama with awards-level visual identity.</p>
+            </article>
+          </div>
+          <div class="cta-row">
+            <a class="button" href="../../prequel/script-outline.md">Read Prequel Outline</a>
+          </div>
+        </section>
+
+        <div class="grid">
+          <section id="characters" aria-labelledby="characters-heading">
+            <h2 id="characters-heading">Characters</h2>
+            <ul>
+              <li><strong>Atuun:</strong> Fatherless spark who unites tribes and carries the migration south.</li>
+              <li><strong>Spirit Elder:</strong> Ritual interpreter balancing inherited law against survival reality.</li>
+              <li><strong>Nara:</strong> Hearth keeper whose practical care turns vision into daily endurance.</li>
+              <li><strong>The Hunter:</strong> Skeptical warrior-foil who tests leadership through conflict.</li>
+              <li><strong>The Mentor:</strong> Veteran guide whose sacrifice passes the fire and the mission forward.</li>
+            </ul>
+            <a href="../../prequel/characters.md">Full prequel character arcs</a>
+          </section>
+
+          <section id="world" aria-labelledby="world-heading">
+            <h2 id="world-heading">World</h2>
+            <ul>
+              <li><strong>Ice-Age France:</strong> white horizons, predator pressure, and dwindling food systems.</li>
+              <li><strong>Cavern Sanctuaries:</strong> ritual chambers where myth and authority are negotiated.</li>
+              <li><strong>Migration Corridors:</strong> mountain passes, river deaths, and fragile moving camps.</li>
+              <li><strong>Warm South:</strong> rebirth zones where memory transforms into settlement.</li>
+            </ul>
+            <a href="../../prequel/locations.md">View prequel location guide</a>
+          </section>
+        </div>
+
+        <section id="analysis" aria-labelledby="analysis-heading">
+          <h2 id="analysis-heading">Interpretive Analysis</h2>
+          <ul>
+            <li>
+              <strong>Survival knowledge as moral power:</strong> reading stars, weather, and migration routes becomes
+              ethical leadership, not only technique.
+            </li>
+            <li>
+              <strong>Destiny without lineage:</strong> Atuun's authority is constructed through sacrifice and
+              stewardship rather than blood privilege.
+            </li>
+            <li>
+              <strong>Unity as anti-violence strategy:</strong> merging rival tribes reframes cooperation as the first
+              civilizational act.
+            </li>
+            <li>
+              <strong>Fire as memory system:</strong> preserving flame symbolizes continuity of life, ritual, and
+              collective identity under extinction pressure.
+            </li>
+          </ul>
+        </section>
+
+        <section id="editions" aria-labelledby="editions-heading">
+          <h2 id="editions-heading">Pitch</h2>
+          <p>
+            Decision-ready framing for two buyers: editorial acquisition and screen development.
+          </p>
+          <div class="view-toggle" role="tablist" aria-label="Pitch perspective">
+            <button id="tab-editorial" class="tab-btn" role="tab" aria-selected="true" aria-controls="panel-editorial" type="button">Editorial View</button>
+            <button id="tab-producer" class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-producer" type="button">Producer View</button>
+          </div>
+
+          <div id="panel-editorial" class="view-panel" role="tabpanel" aria-labelledby="tab-editorial">
+            <div class="editions-grid">
+              <article class="edition-card" aria-labelledby="editorial-book-heading">
+                <p class="kicker">Literary Package</p>
+                <h3 id="editorial-book-heading">Book</h3>
+                <p>Mythic-prehistoric literary package positioned for readers who want high-stakes survival with philosophical depth.</p>
+                <ul class="edition-list">
+                  <li>Audience lane: literary historical + mythic survival fiction readers</li>
+                  <li>Comp lane: migration and origin narratives with character-led moral stakes</li>
+                  <li>Package status: summary, outline, characters, world notes, and scene files complete</li>
+                  <li>Ask: greenlight prose treatment development for submission-readiness</li>
+                </ul>
+              </article>
+              <article class="edition-card" aria-labelledby="editorial-film-heading">
+                <p class="kicker">Screen Package</p>
+                <h3 id="editorial-film-heading">Screen</h3>
+                <p>Primal survival drama with elemental visual language and clear emotional spine around Atuun's leadership arc.</p>
+                <ul class="edition-list">
+                  <li>Audience lane: prestige historical/survival drama with awards potential</li>
+                  <li>Format options: feature first, expandable event series</li>
+                  <li>Production profile: natural locations + repeatable camp/cavern set strategy</li>
+                  <li>Ask: attach director for visual treatment + development package</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <div id="panel-producer" class="view-panel" role="tabpanel" aria-labelledby="tab-producer" hidden>
+            <div class="editions-grid">
+              <article class="edition-card" aria-labelledby="producer-book-heading">
+                <p class="kicker">Publishing Opportunity</p>
+                <h3 id="producer-book-heading">Book</h3>
+                <p>Origin installment that increases trilogy value while standing alone as a complete survival narrative.</p>
+                <ul class="edition-list">
+                  <li>Positioning: mythic prehistory with modern emotional resonance</li>
+                  <li>Series value: anchors the reverse-age trilogy architecture</li>
+                  <li>Rights upside: direct bridge to main-story and sequel adaptations</li>
+                  <li>Next milestone: commission polished sample chapters + synopsis deck</li>
+                </ul>
+              </article>
+              <article class="edition-card" aria-labelledby="producer-film-heading">
+                <p class="kicker">Production Opportunity</p>
+                <h3 id="producer-film-heading">Screen</h3>
+                <p>Production-friendly survival epic with premium visuals and practical tension from climate, scarcity, and tribal politics.</p>
+                <ul class="edition-list">
+                  <li>Budget lane: mid-to-upper historical survival drama</li>
+                  <li>Format: feature film with event-series optionality</li>
+                  <li>Visual anchor: aurora burn, cave rites, alpine crossings, fire ritual transfer</li>
+                  <li>Next step: producer attachment + finance-facing lookbook</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="visuals" aria-labelledby="visuals-heading">
+          <h2 id="visuals-heading">Visual Concepts</h2>
+          <p>
+            Concept visuals for the prequel's glacial survival tone, migration arc, and ritual-fire mythology.
+          </p>
+          <div class="visual-grid">
+            <figure class="visual-card">
+              <div class="visual-thumb">
+                <img src="./assets/prequel-hero-ice-embers.png" alt="Prequel hero concept: ice-age landscape under red aurora." loading="lazy" />
+              </div>
+              <figcaption>Hero Concept: Sky-Fire over Ice Plains</figcaption>
+            </figure>
+            <figure class="visual-card">
+              <div class="visual-thumb">
+                <img src="./assets/prequel-poster-atuun.png" alt="Prequel character concept for Atuun." loading="lazy" />
+              </div>
+              <figcaption>Character Poster: Atuun</figcaption>
+            </figure>
+            <figure class="visual-card">
+              <div class="visual-thumb">
+                <img src="./assets/prequel-map-migration.png" alt="Prequel migration map concept from frozen north to warm south." loading="lazy" />
+              </div>
+              <figcaption>Migration Map Concept</figcaption>
+            </figure>
+            <figure class="visual-card">
+              <div class="visual-thumb">
+                <img src="./assets/prequel-motif-fire-bowl.png" alt="Prequel motif concept with ember bowl and ritual symbols." loading="lazy" />
+              </div>
+              <figcaption>Motif Concept: Fire as Inheritance</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <aside class="links" id="materials" aria-labelledby="materials-heading">
+          <h2 id="materials-heading">Files</h2>
+          <p>Age of Embers forms the first movement of the trilogy's reverse-age arc.</p>
+          <ul>
+            <li><a href="../../prequel/README.md">Prequel summary</a></li>
+            <li><a href="../../prequel/script-outline.md">Prequel script outline</a></li>
+            <li><a href="../../prequel/scenes/">Prequel scene-by-scene files</a></li>
+            <li><a href="../index.html">Main story landing (Age of Pisces)</a></li>
+            <li><a href="../sequel/">Sequel landing (Age of Acquarius)</a></li>
+          </ul>
+        </aside>
+      </main>
+
+      <p class="footer">The Fatherless: Age of Embers &copy; 2026. All rights reserved.</p>
+    </div>
+
+    <script>
+      (function () {
+        var editorialTab = document.getElementById("tab-editorial");
+        var producerTab = document.getElementById("tab-producer");
+        var editorialPanel = document.getElementById("panel-editorial");
+        var producerPanel = document.getElementById("panel-producer");
+        if (!editorialTab || !producerTab || !editorialPanel || !producerPanel) return;
+        var tabs = [editorialTab, producerTab];
+
+        function activate(view) {
+          var showEditorial = view === "editorial";
+          editorialTab.setAttribute("aria-selected", String(showEditorial));
+          producerTab.setAttribute("aria-selected", String(!showEditorial));
+          editorialPanel.hidden = !showEditorial;
+          producerPanel.hidden = showEditorial;
+        }
+
+        function activateByIndex(index) {
+          var target = tabs[index];
+          if (!target) return;
+          target.focus();
+          activate(target.id === "tab-editorial" ? "editorial" : "producer");
+        }
+
+        function onTabKeydown(event) {
+          var currentIndex = tabs.indexOf(event.currentTarget);
+          if (currentIndex < 0) return;
+          if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+            event.preventDefault();
+            activateByIndex((currentIndex + 1) % tabs.length);
+            return;
+          }
+          if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+            event.preventDefault();
+            activateByIndex((currentIndex - 1 + tabs.length) % tabs.length);
+            return;
+          }
+          if (event.key === "Home") {
+            event.preventDefault();
+            activateByIndex(0);
+            return;
+          }
+          if (event.key === "End") {
+            event.preventDefault();
+            activateByIndex(tabs.length - 1);
+          }
+        }
+
+        editorialTab.addEventListener("click", function () { activate("editorial"); });
+        producerTab.addEventListener("click", function () { activate("producer"); });
+        editorialTab.addEventListener("keydown", onTabKeydown);
+        producerTab.addEventListener("keydown", onTabKeydown);
+      })();
+    </script>
+  </body>
+</html>

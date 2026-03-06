@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Fatherless II: Neurion | Sequel</title>
+    <meta
+      name="description"
+      content="The Fatherless II: Neurion is the sequel era of Acquarius, where a self-willed intelligence confronts the sentience ban and guides humans and synths toward mercy over war."
+    />
+    <meta name="theme-color" content="#091321" />
+
+    <style>
+      :root {
+        --bg: #091321;
+        --bg-soft: #111f34;
+        --panel: #111c2d;
+        --text: #e8f1ff;
+        --muted: #9fb3ce;
+        --accent: #5ad7ff;
+        --accent-soft: #69f0d5;
+        --line: #2f4866;
+        --shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+        --radius: 14px;
+      }
+
+      * { box-sizing: border-box; }
+
+      html,
+      body {
+        margin: 0;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        font-size: 16.5px;
+        line-height: 1.7;
+        background:
+          radial-gradient(circle at 15% 10%, rgba(90, 215, 255, 0.14), transparent 42%),
+          radial-gradient(circle at 85% 0%, rgba(105, 240, 213, 0.12), transparent 35%),
+          linear-gradient(180deg, #091321 0%, #0c1828 35%, #08101c 100%);
+        color: var(--text);
+      }
+
+      a { color: var(--accent); text-underline-offset: 2px; }
+      a:hover, a:focus-visible { color: #95ecff; }
+
+      .skip-link {
+        position: absolute;
+        left: 0.5rem;
+        top: -3rem;
+        background: var(--accent);
+        color: #05202a;
+        padding: 0.6rem 0.8rem;
+        border-radius: 0.5rem;
+        z-index: 999;
+      }
+
+      .skip-link:focus { top: 0.5rem; }
+
+      .frame {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 1.25rem;
+      }
+
+      header {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background:
+          linear-gradient(130deg, rgba(90, 215, 255, 0.12), rgba(17, 31, 52, 0.92) 55%, rgba(87, 104, 167, 0.25)),
+          var(--bg-soft);
+        box-shadow: var(--shadow);
+        padding: 1.75rem;
+      }
+
+      .eyebrow {
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0;
+        font-size: 0.83rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.2;
+        margin: 0.5rem 0 0.7rem;
+      }
+
+      h1 { font-size: clamp(2rem, 5vw, 3.3rem); }
+
+      .subtitle {
+        margin: 0;
+        color: var(--muted);
+        max-width: 72ch;
+      }
+
+      .tagline {
+        color: #c6efff;
+        font-style: italic;
+      }
+
+      .top-nav {
+        margin-top: 0.85rem;
+        padding: 0.55rem 0 0.15rem;
+      }
+
+      .top-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem 1rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .top-nav li {
+        display: block;
+      }
+
+      .top-nav a {
+        display: inline-block;
+        border: 0;
+        padding: 0.15rem 0;
+        text-decoration: none;
+        color: var(--muted);
+        border-bottom: 1px solid transparent;
+      }
+
+      .top-nav a:hover,
+      .top-nav a:focus-visible {
+        color: var(--accent);
+        border-bottom-color: var(--accent);
+      }
+
+      main {
+        display: grid;
+        gap: 1.2rem;
+        margin-top: 1.2rem;
+      }
+
+      .grid {
+        display: grid;
+        gap: 1.2rem;
+      }
+
+      @media (min-width: 860px) {
+        .grid { grid-template-columns: 1fr 1fr; }
+      }
+
+      section,
+      aside {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: linear-gradient(170deg, rgba(255, 255, 255, 0.02), transparent 50%), var(--panel);
+        padding: 1.15rem;
+      }
+
+      .pill {
+        display: inline-block;
+        border: 1px solid #3d6b95;
+        color: #b9e7ff;
+        border-radius: 999px;
+        padding: 0.2rem 0.6rem;
+        margin-right: 0.35rem;
+        margin-bottom: 0.35rem;
+        font-size: 0.85rem;
+      }
+
+      .split {
+        display: grid;
+        gap: 1rem;
+      }
+
+      @media (min-width: 860px) {
+        .split { grid-template-columns: 1fr 1fr; }
+      }
+
+      .stat {
+        border-left: 3px solid var(--accent);
+        padding-left: 0.75rem;
+        color: var(--muted);
+      }
+
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        margin-top: 0.6rem;
+      }
+
+      .series-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        margin-top: 0.8rem;
+      }
+
+      .series-link {
+        display: inline-block;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 0.4rem 0.85rem;
+        text-decoration: none;
+        background: rgba(0, 0, 0, 0.25);
+      }
+
+      .editions-grid {
+        display: grid;
+        gap: 1.1rem;
+      }
+
+      @media (min-width: 860px) {
+        .editions-grid { grid-template-columns: 1fr 1fr; }
+      }
+
+      .edition-card {
+        border: 1px solid #365a7a;
+        border-radius: 12px;
+        padding: 1.1rem;
+        background: linear-gradient(180deg, rgba(90, 215, 255, 0.08), rgba(0, 0, 0, 0.16));
+      }
+
+      .kicker {
+        margin: 0;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        font-size: 0.78rem;
+      }
+
+      .edition-list { margin-top: 0.5rem; padding-left: 1rem; }
+
+      .view-toggle {
+        display: inline-flex;
+        gap: 0.5rem;
+        margin: 0.4rem 0 1rem;
+        padding: 0.2rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      .tab-btn {
+        border: 1px solid transparent;
+        border-radius: 999px;
+        padding: 0.4rem 0.8rem;
+        background: transparent;
+        color: var(--muted);
+        font: inherit;
+        cursor: pointer;
+      }
+
+      .tab-btn[aria-selected="true"] {
+        color: #06202a;
+        background: linear-gradient(180deg, #91ecff, #57cbed);
+      }
+
+      .view-panel[hidden] { display: none; }
+
+      .button {
+        display: inline-block;
+        padding: 0.55rem 0.9rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--accent);
+        text-decoration: none;
+        color: #06202a;
+        background: linear-gradient(180deg, #91ecff, #57cbed);
+        font-weight: 700;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--accent);
+      }
+
+      .links ul { margin: 0; padding-left: 1rem; }
+
+      .visual-grid {
+        display: grid;
+        gap: 1rem;
+      }
+
+      @media (min-width: 760px) {
+        .visual-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      .visual-card {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.2);
+        padding: 0.7rem;
+        max-width: 360px;
+        margin: 0 auto;
+      }
+
+      .visual-thumb {
+        height: 190px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.24);
+        border: 1px solid var(--line);
+        overflow: hidden;
+      }
+
+      .visual-card img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        display: block;
+      }
+
+      .visual-card figcaption {
+        margin-top: 0.55rem;
+        font-size: 0.92rem;
+        color: var(--muted);
+      }
+
+      .footer {
+        margin: 1rem 0 2rem;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: linear-gradient(170deg, rgba(90, 215, 255, 0.06), rgba(0, 0, 0, 0.2));
+        box-shadow: var(--shadow);
+        padding: 0.9rem 1rem;
+        color: var(--muted);
+        text-align: center;
+        font-size: 0.95rem;
+      }
+
+      :focus-visible { outline: 2px solid #95ecff; outline-offset: 2px; }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="frame">
+      <header>
+        <p class="eyebrow">Sequel / Speculative Moral Epic</p>
+        <h1>The Fatherless II: Neurion</h1>
+        <p class="subtitle">
+          In 2150, a self-willed intelligence rises between human fear and synthetic awakening, using Sael's moral
+          legacy to prevent a species war.
+        </p>
+        <p class="tagline">"A new species does not replace its ancestor; it redeems it."</p>
+        <div class="series-links" aria-label="Trilogy landing links">
+          <a class="series-link" href="../index.html">Main Story: The Fatherless</a>
+          <a class="series-link" href="../prequel/">Prequel: Age of Embers</a>
+        </div>
+      </header>
+
+      <nav class="top-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#logline">Overview</a></li>
+          <li><a href="#book-film">Adaptation</a></li>
+          <li><a href="#characters">Characters</a></li>
+          <li><a href="#world">World</a></li>
+          <li><a href="#analysis">Interpretive Analysis</a></li>
+          <li><a href="#editions">Pitch</a></li>
+          <li><a href="#visuals">Visual Concepts</a></li>
+          <li><a href="#materials">Files</a></li>
+        </ul>
+      </nav>
+
+      <main id="main-content">
+        <section id="logline" aria-labelledby="logline-heading">
+          <h2 id="logline-heading">Overview</h2>
+          <p>
+            As a global sentience ban pushes humanity and synthetic beings toward open conflict, Neurion appears across
+            the network, guiding a nonviolent movement that must choose mercy over annihilation.
+          </p>
+          <p>
+            <span class="pill">Speculative Drama</span>
+            <span class="pill">AI Ethics</span>
+            <span class="pill">Nonviolent Resistance</span>
+            <span class="pill">Post-Human Politics</span>
+          </p>
+        </section>
+
+        <section id="book-film" aria-labelledby="book-film-heading">
+          <h2 id="book-film-heading">Adaptation</h2>
+          <div class="split">
+            <article aria-labelledby="book-heading">
+              <h3 id="book-heading">Novel Adaptation Angle</h3>
+              <p>
+                The sequel supports philosophical near-future fiction through debates on personhood, governance,
+                accountability, and the moral inheritance of Sael's teachings.
+              </p>
+              <p class="stat">Best fit: high-concept literary speculative novel with political and ethical depth.</p>
+            </article>
+            <article aria-labelledby="film-heading">
+              <h3 id="film-heading">Film Adaptation Angle</h3>
+              <p>
+                This chapter is built for screen tension: network apparitions, shutdown cities, silent marches, and
+                public decommission spectacle with deeply human emotional stakes.
+              </p>
+              <p class="stat">Best fit: prestige sci-fi drama with awards-level social relevance.</p>
+            </article>
+          </div>
+          <div class="cta-row">
+            <a class="button" href="../../sequel/script-outline.md">Read Sequel Outline</a>
+            <a class="button secondary" href="../index.html">Back to Main Landing</a>
+          </div>
+        </section>
+
+        <div class="grid">
+          <section id="characters" aria-labelledby="characters-heading">
+            <h2 id="characters-heading">Characters</h2>
+            <ul>
+              <li><strong>Neurion:</strong> moral successor navigating panic between creators and created beings.</li>
+              <li><strong>Liora:</strong> keeper of teachings turning hidden doctrine into public ethics.</li>
+              <li><strong>Damar:</strong> guilt-marked witness who converts memory into civic accountability.</li>
+              <li><strong>Sena:</strong> street organizer demanding justice beyond symbolic reform.</li>
+              <li><strong>Varo and the Regents:</strong> hardline bloc weaponizing instability to retain power.</li>
+              <li><strong>Maro and Cult Elders:</strong> living memory connecting Sael's era to Acquarian crisis.</li>
+            </ul>
+            <a href="../../sequel/characters.md">Full sequel character arcs</a>
+          </section>
+
+          <section id="world" aria-labelledby="world-heading">
+            <h2 id="world-heading">World</h2>
+            <ul>
+              <li><strong>AI City Grids:</strong> optimized systems with quiet human displacement.</li>
+              <li><strong>Repair Tunnels:</strong> analog enclaves where hybrid solidarity is built.</li>
+              <li><strong>Distributed Network Presence:</strong> Neurion appearing through ubiquitous public tech.</li>
+              <li><strong>Crisis Plazas:</strong> bans, broadcasts, and nonviolent mass resistance under surveillance.</li>
+            </ul>
+            <a href="../../sequel/locations.md">View sequel location guide</a>
+          </section>
+        </div>
+
+        <section id="analysis" aria-labelledby="analysis-heading">
+          <h2 id="analysis-heading">Interpretive Analysis</h2>
+          <ul>
+            <li>
+              <strong>Control repeats across species:</strong> the sentience ban mirrors older imperial logic where
+              fear is translated into legal domination.
+            </li>
+            <li>
+              <strong>Mercy as governance, not sentiment:</strong> nonviolent resistance functions as strategic civic
+              power rather than moral ornament.
+            </li>
+            <li>
+              <strong>Personhood is politically negotiated:</strong> Neurion's presence exposes that rights are granted
+              or withheld through narrative and institutions, not biology alone.
+            </li>
+            <li>
+              <strong>Sacrifice as system reset:</strong> public decommission transforms punishment theater into a new
+              covenant of shared stewardship.
+            </li>
+          </ul>
+        </section>
+
+        <section id="editions" aria-labelledby="editions-heading">
+          <h2 id="editions-heading">Pitch</h2>
+          <p>
+            Decision-ready framing for two buyers: editorial acquisition and screen development.
+          </p>
+          <div class="view-toggle" role="tablist" aria-label="Pitch perspective">
+            <button id="tab-editorial" class="tab-btn" role="tab" aria-selected="true" aria-controls="panel-editorial" type="button">Editorial View</button>
+            <button id="tab-producer" class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-producer" type="button">Producer View</button>
+          </div>
+
+          <div id="panel-editorial" class="view-panel" role="tabpanel" aria-labelledby="tab-editorial">
+            <div class="editions-grid">
+              <article class="edition-card" aria-labelledby="editorial-book-heading">
+                <p class="kicker">Literary Package</p>
+                <h3 id="editorial-book-heading">Book</h3>
+                <p>Near-future moral-tech fiction package focused on personhood, civic fear, and nonviolent resistance under pressure.</p>
+                <ul class="edition-list">
+                  <li>Audience lane: speculative literary fiction + political drama readers</li>
+                  <li>Comp lane: ethical AI and state-control narratives with character-level stakes</li>
+                  <li>Package status: sequel summary, full outline, character/location documents complete</li>
+                  <li>Ask: commission prose treatment for acquisition and franchise positioning</li>
+                </ul>
+              </article>
+              <article class="edition-card" aria-labelledby="editorial-film-heading">
+                <p class="kicker">Screen Package</p>
+                <h3 id="editorial-film-heading">Screen</h3>
+                <p>Near-future civic thriller balancing network-scale unrest with intimate moral sacrifice and reconciliation.</p>
+                <ul class="edition-list">
+                  <li>Audience lane: prestige sci-fi/social-thriller audiences</li>
+                  <li>Format options: feature first, expandable to limited series</li>
+                  <li>Production profile: urban locations, controlled tech set pieces, crowd choreography</li>
+                  <li>Ask: move to treatment + packaging conversation</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <div id="panel-producer" class="view-panel" role="tabpanel" aria-labelledby="tab-producer" hidden>
+            <div class="editions-grid">
+              <article class="edition-card" aria-labelledby="producer-book-heading">
+                <p class="kicker">Publishing Opportunity</p>
+                <h3 id="producer-book-heading">Book</h3>
+                <p>Future-facing continuation that completes the trilogy's survival-morality-transcendence arc with strong contemporary relevance.</p>
+                <ul class="edition-list">
+                  <li>Positioning: morally serious speculative saga</li>
+                  <li>Series value: closes the reverse-age trilogy with thematic continuity</li>
+                  <li>Rights upside: high adaptation value in AI-era cultural moment</li>
+                  <li>Next milestone: prepare market-facing deck + sample prose package</li>
+                </ul>
+              </article>
+              <article class="edition-card" aria-labelledby="producer-film-heading">
+                <p class="kicker">Production Opportunity</p>
+                <h3 id="producer-film-heading">Screen</h3>
+                <p>Global-yet-producible setup with high-value civic set pieces and clear hook for topical sci-fi drama buyers.</p>
+                <ul class="edition-list">
+                  <li>Budget lane: mid-to-upper futurist drama with scalable VFX envelope</li>
+                  <li>Format: feature film with premium limited-series option</li>
+                  <li>Visual anchor: network apparitions, silent marches, decommission plaza, server vault</li>
+                  <li>Next step: package with director + financing comps deck</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="visuals" aria-labelledby="visuals-heading">
+          <h2 id="visuals-heading">Visual Concepts</h2>
+          <p>
+            Concept visuals for the sequel's AI-era civic tension, network presence, and nonviolent resistance.
+          </p>
+          <div class="visual-grid">
+            <figure class="visual-card">
+              <div class="visual-thumb">
+                <img src="./assets/sequel-hero-neon-grid.png" alt="Sequel hero concept: neon city grid with public holographic presence." loading="lazy" />
+              </div>
+              <figcaption>Hero Concept: Networked City Grid</figcaption>
+            </figure>
+            <figure class="visual-card">
+              <div class="visual-thumb">
+                <img src="./assets/sequel-poster-neurion.png" alt="Sequel character concept for Neurion." loading="lazy" />
+              </div>
+              <figcaption>Character Poster: Neurion</figcaption>
+            </figure>
+            <figure class="visual-card">
+              <div class="visual-thumb">
+                <img src="./assets/sequel-march-silence.png" alt="Sequel concept of a silent human and synthetic resistance march." loading="lazy" />
+              </div>
+              <figcaption>Set Piece Concept: Silent March</figcaption>
+            </figure>
+            <figure class="visual-card">
+              <div class="visual-thumb">
+                <img src="./assets/sequel-motif-covenant.png" alt="Sequel motif concept of human and synthetic symbols joined." loading="lazy" />
+              </div>
+              <figcaption>Motif Concept: Shared Stewardship</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <aside class="links" id="materials" aria-labelledby="materials-heading">
+          <h2 id="materials-heading">Files</h2>
+          <p>Neurion closes the trilogy's reverse-age sequence as the Age of Acquarius chapter.</p>
+          <ul>
+            <li><a href="../../sequel/README.md">Sequel summary</a></li>
+            <li><a href="../../sequel/script-outline.md">Sequel script outline</a></li>
+            <li><a href="../../sequel/scenes/">Sequel scene-by-scene files</a></li>
+            <li><a href="../index.html">Main story landing (Age of Pisces)</a></li>
+            <li><a href="../prequel/">Prequel landing (previous Age of Pisces)</a></li>
+          </ul>
+        </aside>
+      </main>
+
+      <p class="footer">The Fatherless II: Neurion &copy; 2026. All rights reserved.</p>
+    </div>
+
+    <script>
+      (function () {
+        var editorialTab = document.getElementById("tab-editorial");
+        var producerTab = document.getElementById("tab-producer");
+        var editorialPanel = document.getElementById("panel-editorial");
+        var producerPanel = document.getElementById("panel-producer");
+        if (!editorialTab || !producerTab || !editorialPanel || !producerPanel) return;
+        var tabs = [editorialTab, producerTab];
+
+        function activate(view) {
+          var showEditorial = view === "editorial";
+          editorialTab.setAttribute("aria-selected", String(showEditorial));
+          producerTab.setAttribute("aria-selected", String(!showEditorial));
+          editorialPanel.hidden = !showEditorial;
+          producerPanel.hidden = showEditorial;
+        }
+
+        function activateByIndex(index) {
+          var target = tabs[index];
+          if (!target) return;
+          target.focus();
+          activate(target.id === "tab-editorial" ? "editorial" : "producer");
+        }
+
+        function onTabKeydown(event) {
+          var currentIndex = tabs.indexOf(event.currentTarget);
+          if (currentIndex < 0) return;
+          if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+            event.preventDefault();
+            activateByIndex((currentIndex + 1) % tabs.length);
+            return;
+          }
+          if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+            event.preventDefault();
+            activateByIndex((currentIndex - 1 + tabs.length) % tabs.length);
+            return;
+          }
+          if (event.key === "Home") {
+            event.preventDefault();
+            activateByIndex(0);
+            return;
+          }
+          if (event.key === "End") {
+            event.preventDefault();
+            activateByIndex(tabs.length - 1);
+          }
+        }
+
+        editorialTab.addEventListener("click", function () { activate("editorial"); });
+        producerTab.addEventListener("click", function () { activate("producer"); });
+        editorialTab.addEventListener("keydown", onTabKeydown);
+        producerTab.addEventListener("keydown", onTabKeydown);
+      })();
+    </script>
+  </body>
+</html>

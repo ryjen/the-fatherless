@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Fatherless | Book and Film Epic</title>
+    <meta
+      name="description"
+      content="The Fatherless is a historical moral epic about Sael, a child born from cruelty who becomes a symbol of forgiveness. Explore the story as a cinematic saga and literary work."
+    />
+    <meta name="theme-color" content="#140f0b" />
+    <meta name="robots" content="index,follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Fatherless | Book and Film Epic" />
+    <meta
+      property="og:description"
+      content="A historical drama where innocence confronts empire. Discover The Fatherless as both a novel concept and cinematic screenplay."
+    />
+    <meta property="og:site_name" content="The Fatherless" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Fatherless | Book and Film Epic" />
+    <meta
+      name="twitter:description"
+      content="A moral epic of power, sacrifice, and forgiveness in the city-state of Aurelia."
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "name": "The Fatherless"
+          },
+          {
+            "@type": "Book",
+            "name": "The Fatherless",
+            "genre": ["Historical Drama", "Moral Epic"],
+            "description": "A child born from political cruelty becomes a moral force that challenges an empire through forgiveness."
+          },
+          {
+            "@type": "Movie",
+            "name": "The Fatherless",
+            "genre": ["Historical Drama", "Epic"],
+            "description": "A cinematic adaptation concept centered on sacrifice, public spectacle, and moral resistance in Aurelia."
+          }
+        ]
+      }
+    </script>
+
+    <style>
+      :root {
+        --bg: #110d0a;
+        --bg-soft: #1c1611;
+        --panel: #211a15;
+        --text: #f4ece0;
+        --muted: #cdbca8;
+        --gold: #d2a357;
+        --rust: #9b5836;
+        --line: #3c2d22;
+        --shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+        --radius: 14px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-size: 17px;
+        background:
+          radial-gradient(circle at 15% 10%, rgba(210, 163, 87, 0.14), transparent 42%),
+          radial-gradient(circle at 85% 0%, rgba(155, 88, 54, 0.18), transparent 35%),
+          linear-gradient(180deg, #110d0a 0%, #17110d 35%, #0f0b08 100%);
+        color: var(--text);
+        line-height: 1.7;
+      }
+
+      a {
+        color: var(--gold);
+        text-underline-offset: 2px;
+      }
+
+      a:hover,
+      a:focus-visible {
+        color: #f3c276;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: 0.5rem;
+        top: -3rem;
+        background: var(--gold);
+        color: #20150d;
+        padding: 0.6rem 0.8rem;
+        border-radius: 0.5rem;
+        z-index: 999;
+      }
+
+      .skip-link:focus {
+        top: 0.5rem;
+      }
+
+      .frame {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 1.25rem;
+      }
+
+      header {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background:
+          linear-gradient(130deg, rgba(210, 163, 87, 0.12), rgba(33, 26, 21, 0.9) 55%),
+          var(--bg-soft);
+        box-shadow: var(--shadow);
+        padding: 1.75rem;
+      }
+
+      .eyebrow {
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0;
+        font-size: 0.83rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.2;
+        margin: 0.5rem 0 0.7rem;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 5vw, 3.4rem);
+      }
+
+      .subtitle {
+        margin: 0;
+        color: var(--muted);
+        max-width: 70ch;
+      }
+
+      .top-nav {
+        margin-top: 0.85rem;
+        padding: 0.55rem 0 0.15rem;
+      }
+
+      .top-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem 1rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .top-nav li {
+        display: block;
+      }
+
+      .top-nav a {
+        display: inline-block;
+        border: 0;
+        padding: 0.15rem 0;
+        text-decoration: none;
+        color: var(--muted);
+        border-bottom: 1px solid transparent;
+      }
+
+      .top-nav a:hover,
+      .top-nav a:focus-visible {
+        color: var(--gold);
+        border-bottom-color: var(--gold);
+      }
+
+      main {
+        display: grid;
+        gap: 1.2rem;
+        margin-top: 1.2rem;
+      }
+
+      .grid {
+        display: grid;
+        gap: 1.2rem;
+      }
+
+      @media (min-width: 860px) {
+        .grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      section,
+      aside {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: linear-gradient(170deg, rgba(255, 255, 255, 0.02), transparent 50%), var(--panel);
+        padding: 1.15rem;
+      }
+
+      .tagline {
+        color: #edd9ba;
+        font-style: italic;
+      }
+
+      .pill {
+        display: inline-block;
+        border: 1px solid var(--rust);
+        color: #f7d2b9;
+        border-radius: 999px;
+        padding: 0.2rem 0.6rem;
+        margin-right: 0.35rem;
+        margin-bottom: 0.35rem;
+        font-size: 0.85rem;
+      }
+
+      .split {
+        display: grid;
+        gap: 1rem;
+      }
+
+      @media (min-width: 860px) {
+        .split {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .stat {
+        border-left: 3px solid var(--gold);
+        padding-left: 0.75rem;
+        color: var(--muted);
+      }
+
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        margin-top: 0.6rem;
+      }
+
+      .series-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        margin-top: 0.8rem;
+      }
+
+      .series-link {
+        display: inline-block;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 0.4rem 0.85rem;
+        text-decoration: none;
+        background: rgba(0, 0, 0, 0.25);
+      }
+
+      .editions-grid {
+        display: grid;
+        gap: 1.1rem;
+      }
+
+      @media (min-width: 860px) {
+        .editions-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .edition-card {
+        border: 1px solid var(--rust);
+        border-radius: 12px;
+        padding: 1.1rem;
+        background: linear-gradient(180deg, rgba(210, 163, 87, 0.09), rgba(0, 0, 0, 0.16));
+      }
+
+      .kicker {
+        margin: 0;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        font-size: 0.78rem;
+      }
+
+      .edition-list {
+        margin-top: 0.5rem;
+        padding-left: 1rem;
+      }
+
+      .view-toggle {
+        display: inline-flex;
+        gap: 0.5rem;
+        margin: 0.4rem 0 1rem;
+        padding: 0.2rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      .tab-btn {
+        border: 1px solid transparent;
+        border-radius: 999px;
+        padding: 0.4rem 0.8rem;
+        background: transparent;
+        color: var(--muted);
+        font: inherit;
+        cursor: pointer;
+      }
+
+      .tab-btn[aria-selected="true"] {
+        color: #22160d;
+        background: linear-gradient(180deg, #f3c87d, #d29e4e);
+      }
+
+      .view-panel[hidden] {
+        display: none;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 0.55rem 0.9rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--gold);
+        text-decoration: none;
+        color: #23170d;
+        background: linear-gradient(180deg, #f3c87d, #d29e4e);
+        font-weight: 700;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--gold);
+      }
+
+      .links ul {
+        margin: 0;
+        padding-left: 1rem;
+      }
+
+      .visual-grid {
+        display: grid;
+        gap: 1rem;
+      }
+
+      @media (min-width: 760px) {
+        .visual-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      .visual-card {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.2);
+        padding: 0.7rem;
+        max-width: 360px;
+        margin: 0 auto;
+      }
+
+      .visual-thumb {
+        height: 190px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.24);
+        border: 1px solid var(--line);
+        overflow: hidden;
+      }
+
+      .visual-card img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        display: block;
+      }
+
+      .visual-card figcaption {
+        margin-top: 0.55rem;
+        font-size: 0.92rem;
+        color: var(--muted);
+      }
+
+      .footer {
+        margin: 1rem 0 2rem;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: linear-gradient(170deg, rgba(210, 163, 87, 0.06), rgba(0, 0, 0, 0.2));
+        box-shadow: var(--shadow);
+        padding: 0.9rem 1rem;
+        color: var(--muted);
+      }
+
+      .footer-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.6rem;
+      }
+
+      .footer-note {
+        margin: 0;
+      }
+
+      .footer-copy {
+        margin: 0.4rem 0 0;
+        font-size: 0.9rem;
+        color: #e6d2b6;
+      }
+
+      :focus-visible {
+        outline: 2px solid #f5ca7e;
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="frame">
+      <header>
+        <p class="eyebrow">Historical Drama / Moral Epic</p>
+        <h1>The Fatherless</h1>
+        <p class="subtitle">
+          In a decaying empire, Sael is birthed from his father and his father's mother; that forbidden origin is the
+          crux of the entire story and the wound that drives every conflict that follows.
+        </p>
+        <p class="tagline">"You may punish my body, but my spirit forgives."</p>
+        <div class="series-links" aria-label="Trilogy landing links">
+          <a class="series-link" href="./prequel/">Prequel: Age of Embers</a>
+          <a class="series-link" href="./sequel/">Sequel: Neurion</a>
+        </div>
+
+      </header>
+      <nav class="top-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#logline">Overview</a></li>
+          <li><a href="#book-film">Adaptation</a></li>
+          <li><a href="#characters">Characters</a></li>
+          <li><a href="#world">World</a></li>
+          <li><a href="#analysis">Interpretive Analysis</a></li>
+          <li><a href="#editions">Pitch</a></li>
+          <li><a href="#visuals">Visual Concepts</a></li>
+          <li><a href="#materials">Files</a></li>
+        </ul>
+      </nav>
+
+      <main id="main-content">
+        <section id="logline" aria-labelledby="logline-heading">
+          <h2 id="logline-heading">Overview</h2>
+          <p>
+            The story's central fact is that Sael is birthed from his father and his father's mother, and that this
+            birth is intentional: engineered by a slave owner who alone holds that knowledge. Raised by a persecuted
+            moral cult, Sael grows into a public symbol of mercy. As slave-master Cassian seeks to erase him, Sael's
+            refusal to return hatred with hatred threatens the empire's entire logic of power.
+          </p>
+          <p>
+            <span class="pill">Forgiveness vs. Power</span>
+            <span class="pill">Historical Epic</span>
+            <span class="pill">Character-Driven Tragedy</span>
+            <span class="pill">Faith and Morality</span>
+          </p>
+        </section>
+
+        <section id="book-film" aria-labelledby="book-film-heading">
+          <h2 id="book-film-heading">Adaptation</h2>
+          <div class="split">
+            <article aria-labelledby="book-heading">
+              <h3 id="book-heading">Novel Adaptation Angle</h3>
+              <p>
+                The internal conflict of Sael, Maro, and Cassian supports rich literary treatment: guilt,
+                conscience, and ideology unfold through interior narrative and philosophical dialogue.
+              </p>
+              <p class="stat">Best fit: prestige historical novel with moral and political depth.</p>
+            </article>
+            <article aria-labelledby="film-heading">
+              <h3 id="film-heading">Film Adaptation Angle</h3>
+              <p>
+                The project already carries cinematic DNA: strong visual motifs (torchlight, crowns, processions,
+                council halls), escalating acts, and crowd-driven public set pieces ending in legacy.
+              </p>
+              <p class="stat">Best fit: mid-to-large scale period drama with awards potential.</p>
+            </article>
+          </div>
+          <div class="cta-row">
+            <a class="button" href="../script-outline.md">Read Script Outline</a>
+            <a class="button secondary" href="../screenplay.md">Read Screenplay Draft</a>
+          </div>
+        </section>
+
+        <div class="grid">
+          <section id="characters" aria-labelledby="characters-heading">
+            <h2 id="characters-heading">Characters</h2>
+            <ul>
+              <li><strong>Sael:</strong> Birthed from his father and his father's mother, then transformed into moral authority.</li>
+              <li><strong>Cassian:</strong> Political cruelty collapsing under its own hubris.</li>
+              <li><strong>Maro:</strong> Envy to confession to redemption.</li>
+              <li><strong>Cult Leaders:</strong> Ethical stewards in a hostile regime.</li>
+            </ul>
+            <a href="../characters.md">Full character arcs</a>
+          </section>
+
+          <section id="world" aria-labelledby="world-heading">
+            <h2 id="world-heading">World</h2>
+            <ul>
+              <li><strong>Aurelian Palace:</strong> Marble opulence, moral decay.</li>
+              <li><strong>Slave Quarters:</strong> Intimacy, fear, and manipulation.</li>
+              <li><strong>Cult Shrine:</strong> Candles, symbols, and hidden teachings.</li>
+              <li><strong>Avarim Outskirts:</strong> Harsh refuge and fragile freedom.</li>
+            </ul>
+            <a href="../locations.md">View location guide</a>
+          </section>
+        </div>
+
+        <section id="analysis" aria-labelledby="analysis-heading">
+          <h2 id="analysis-heading">Interpretive Analysis</h2>
+          <ul>
+            <li>
+              <strong>Knowledge as elite power:</strong> undisclosed relationship between the slaves forced to procreate.
+              (<a href="../script-outline.md">script outline</a>, <a href="../scenes/2-slavers-scheme.md">scene 2</a>)
+            </li>
+            <li>
+              <strong>Miracle of life:</strong> Sael's lack of dyfunction and beauty despite his ill conception shows
+              the spirit of god towards life.
+            </li>
+            <li>
+              <strong>Lambs of fate:</strong> the view of Sael as abnormal birth means a lack of pity for his
+              execution, but also shows that the public has a moral conscious.
+            </li>
+            <li>
+              <strong>Myth is politically manufactured:</strong> institutions sanitize origin while dissident memory
+              preserves moral truth. (<a href="../screenplay.md">screenplay</a>, <a href="../drafting/blueprint.md">blueprint notes</a>)
+            </li>
+            <li>
+              <strong>Forgiveness acts as counter-power:</strong> mercy functions as active resistance, not
+              passivity, but also as a mock of undesired outcomes.
+              (<a href="../scenes/10-sael-confronts-cassian.md">scene 10</a>, <a href="../screenplay.md">screenplay</a>)
+            </li>
+            <li>
+              <strong>Conscience redirects history:</strong> Maro's confession transforms private guilt into public
+              consequence. (<a href="../scenes/3-maros-envy.md">scene 3</a>, <a href="../scenes/7-maros-confession.md">scene 7</a>)
+            </li>
+            <li>
+              <strong>Trilogy thesis across ages:</strong> survival (Atuun) -> morality (Sael) -> coexistence
+              (Neurion). (<a href="../prequel/README.md">prequel summary</a>, <a href="../sequel/README.md">sequel summary</a>)
+            </li>
+          </ul>
+        </section>
+
+
+        <section id="editions" aria-labelledby="editions-heading">
+          <h2 id="editions-heading">Pitch</h2>
+          <p>
+            Decision-ready framing for two buyers: editorial acquisition and screen development.
+          </p>
+          <div class="view-toggle" role="tablist" aria-label="Pitch perspective">
+            <button
+              id="tab-editorial"
+              class="tab-btn"
+              role="tab"
+              aria-selected="true"
+              aria-controls="panel-editorial"
+              type="button"
+            >
+              Editorial View
+            </button>
+            <button
+              id="tab-producer"
+              class="tab-btn"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-producer"
+              type="button"
+            >
+              Producer View
+            </button>
+          </div>
+
+          <div id="panel-editorial" class="view-panel" role="tabpanel" aria-labelledby="tab-editorial">
+            <div class="editions-grid">
+              <article class="edition-card" aria-labelledby="editorial-book-heading">
+                <p class="kicker">Literary Package</p>
+                <h3 id="editorial-book-heading">Book</h3>
+                <p>
+                  Prestige historical-moral fiction centered on Sael, Cassian, and Maro, positioned for book-club and
+                  crossover literary audiences.
+                </p>
+                <ul class="edition-list">
+                  <li>Audience lane: literary historical fiction + morally driven epic drama readers</li>
+                  <li>Comp lane: readers of conscience-driven historical narratives and anti-empire character arcs</li>
+                  <li>Package status: full outline + screenplay draft + mapped prequel/sequel universe</li>
+                  <li>Ask: request full manuscript treatment based on existing outline package</li>
+                </ul>
+              </article>
+              <article class="edition-card" aria-labelledby="editorial-film-heading">
+                <p class="kicker">Screen Package</p>
+                <h3 id="editorial-film-heading">Screen</h3>
+                <p>
+                  Character-led period drama with strong public set pieces and awards-oriented performance roles.
+                </p>
+                <ul class="edition-list">
+                  <li>Audience lane: prestige period-drama viewers with political-moral themes</li>
+                  <li>Format options: feature film first, expandable to limited series</li>
+                  <li>Production profile: contained recurring sets plus event-scale civic sequences</li>
+                  <li>Ask: evaluate for option + treatment-to-script development path</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <div
+            id="panel-producer"
+            class="view-panel"
+            role="tabpanel"
+            aria-labelledby="tab-producer"
+            hidden
+          >
+            <div class="editions-grid">
+              <article class="edition-card" aria-labelledby="producer-book-heading">
+                <p class="kicker">Publishing Opportunity</p>
+                <h3 id="producer-book-heading">Book</h3>
+                <p>
+                  Commercial-literary package with built-in franchise runway from connected prequel/sequel arcs.
+                </p>
+                <ul class="edition-list">
+                  <li>Positioning: conversation-driving moral epic with adaptation upside</li>
+                  <li>IP depth: trilogy architecture already documented across eras</li>
+                  <li>Rights value: clean adaptation bridge from page to screen materials</li>
+                  <li>Next milestone: commission polished prose treatment for submission round</li>
+                </ul>
+              </article>
+              <article class="edition-card" aria-labelledby="producer-film-heading">
+                <p class="kicker">Production Opportunity</p>
+                <h3 id="producer-film-heading">Screen</h3>
+                <p>
+                  Development-friendly period project with clear protagonist/antagonist engine and high-value public spectacle moments.
+                </p>
+                <ul class="edition-list">
+                  <li>Budget lane: mid-to-upper period drama with scalable crowd sequence design</li>
+                  <li>Format: feature film with optional limited-series expansion</li>
+                  <li>Visual anchor: councils, processions, trial/execution arc, legacy ending</li>
+                  <li>Next step: attach producer + director for lookbook and financing package</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section id="visuals" aria-labelledby="visuals-heading">
+          <h2 id="visuals-heading">Visual Concepts</h2>
+          <p>
+            Initial concept visuals for story tone, character marketing, world geography, and adaptation-ready
+            materials.
+          </p>
+          <div class="visual-grid">
+            <figure class="visual-card">
+              <div class="visual-thumb">
+                <img src="./assets/hero-aurelia-skyline.png" alt="Hero concept: torchlit Aurelia skyline at dusk." loading="lazy" />
+              </div>
+              <figcaption>Hero Banner Concept: Aurelia skyline at dusk</figcaption>
+            </figure>
+            <figure class="visual-card">
+              <div class="visual-thumb">
+                <img src="./assets/poster-sael.png" alt="Character poster concept for Sael." loading="lazy" />
+              </div>
+              <figcaption>Character Poster: Sael</figcaption>
+            </figure>
+            <figure class="visual-card">
+              <div class="visual-thumb">
+                <img src="./assets/poster-cassian.png" alt="Character poster concept for Cassian." loading="lazy" />
+              </div>
+              <figcaption>Character Poster: Cassian</figcaption>
+            </figure>
+            <figure class="visual-card">
+              <div class="visual-thumb">
+                <img src="./assets/poster-maro.png" alt="Character poster concept for Maro." loading="lazy" />
+              </div>
+              <figcaption>Character Poster: Maro</figcaption>
+            </figure>
+            <figure class="visual-card">
+              <div class="visual-thumb">
+                <img src="./assets/map-aurelia-world.png" alt="Illustrated map concept of Aurelia and surrounding regions." loading="lazy" />
+              </div>
+              <figcaption>World Map Concept</figcaption>
+            </figure>
+            <figure class="visual-card">
+              <div class="visual-thumb">
+                <img src="./assets/motif-forgiveness-symbols.png" alt="Symbolic motif concept with crown, chains, candles, and olive branch." loading="lazy" />
+              </div>
+              <figcaption>Motif Art: Forgiveness vs Empire</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <aside class="links" id="materials" aria-labelledby="materials-heading">
+          <h2 id="materials-heading">Files</h2>
+          <p>
+            The Fatherless is part of a broader narrative timeline with companion prequel and sequel arcs.
+          </p>
+          <p>
+            Age flow in reverse order: sequel (Age of Acquarius) -> main story (Age of Pisces) -> prequel
+            (previous Age of Pisces).
+          </p>
+          <ul>
+            <li><a href="./prequel/">Prequel</a></li>
+            <li><a href="./sequel/">Sequel</a></li>
+            <li><a href="../history.md">Historical context and political backdrop</a></li>
+            <li><a href="../scenes/">Scene-by-scene structure</a></li>
+          </ul>
+        </aside>
+      </main>
+
+      <footer class="footer" aria-label="Site footer">
+        <div class="footer-row">
+          <p class="footer-note">
+            The Fatherless project landing page. Structured for discoverability, accessibility, and adaptation pitching.
+          </p>
+          <a href="#main-content">Back to top</a>
+        </div>
+        <p class="footer-copy">Copyright &copy; 2026 The Fatherless. All rights reserved.</p>
+      </footer>
+    </div>
+    <script>
+      (function () {
+        var editorialTab = document.getElementById("tab-editorial");
+        var producerTab = document.getElementById("tab-producer");
+        var editorialPanel = document.getElementById("panel-editorial");
+        var producerPanel = document.getElementById("panel-producer");
+        if (!editorialTab || !producerTab || !editorialPanel || !producerPanel) return;
+        var tabs = [editorialTab, producerTab];
+
+        function activate(view) {
+          var showEditorial = view === "editorial";
+          editorialTab.setAttribute("aria-selected", String(showEditorial));
+          producerTab.setAttribute("aria-selected", String(!showEditorial));
+          editorialPanel.hidden = !showEditorial;
+          producerPanel.hidden = showEditorial;
+        }
+
+        function activateByIndex(index) {
+          var target = tabs[index];
+          if (!target) return;
+          target.focus();
+          activate(target.id === "tab-editorial" ? "editorial" : "producer");
+        }
+
+        function onTabKeydown(event) {
+          var currentIndex = tabs.indexOf(event.currentTarget);
+          if (currentIndex < 0) return;
+
+          if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+            event.preventDefault();
+            activateByIndex((currentIndex + 1) % tabs.length);
+            return;
+          }
+          if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+            event.preventDefault();
+            activateByIndex((currentIndex - 1 + tabs.length) % tabs.length);
+            return;
+          }
+          if (event.key === "Home") {
+            event.preventDefault();
+            activateByIndex(0);
+            return;
+          }
+          if (event.key === "End") {
+            event.preventDefault();
+            activateByIndex(tabs.length - 1);
+          }
+        }
+
+        editorialTab.addEventListener("click", function () {
+          activate("editorial");
+        });
+        producerTab.addEventListener("click", function () {
+          activate("producer");
+        });
+        editorialTab.addEventListener("keydown", onTabKeydown);
+        producerTab.addEventListener("keydown", onTabKeydown);
+      })();
+    </script>
+  </body>
+</html>
