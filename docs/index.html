@@ -10,7 +10,7 @@
     />
     <meta name="theme-color" content="#140f0b" />
     <meta name="robots" content="index,follow" />
-    <link rel="canonical" href="https://thefatherless.example/" />
+    <link rel="canonical" href="https://fatherless.ryanjennin.gs/" />
     <link rel="icon" type="image/png" href="./favicon-32x32.png" />
     <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
     <link rel="manifest" href="./site.webmanifest" />
@@ -22,8 +22,8 @@
       content="A historical drama where innocence confronts empire. Discover The Fatherless as both a novel concept and cinematic screenplay."
     />
     <meta property="og:site_name" content="The Fatherless" />
-    <meta property="og:url" content="https://thefatherless.example/" />
-    <meta property="og:image" content="https://thefatherless.example/assets/hero-aurelia-skyline.png" />
+    <meta property="og:url" content="https://fatherless.ryanjennin.gs/" />
+    <meta property="og:image" content="https://fatherless.ryanjennin.gs/assets/hero-aurelia-skyline.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="The Fatherless | Book and Film Epic" />
@@ -31,7 +31,7 @@
       name="twitter:description"
       content="A moral epic of power, sacrifice, and forgiveness in the city-state of Aurelia."
     />
-    <meta name="twitter:image" content="https://thefatherless.example/assets/hero-aurelia-skyline.png" />
+    <meta name="twitter:image" content="https://fatherless.ryanjennin.gs/assets/hero-aurelia-skyline.png" />
 
     <script type="application/ld+json">
       {
@@ -62,13 +62,14 @@
         --bg: #110d0a;
         --bg-soft: #1c1611;
         --panel: #211a15;
+        --panel-raised: #281f19;
         --text: #f4ece0;
         --muted: #cdbca8;
         --gold: #d2a357;
         --rust: #9b5836;
         --line: #3c2d22;
         --shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
-        --radius: 14px;
+        --radius: 16px;
         --content-max: 1100px;
       }
 
@@ -86,23 +87,37 @@
       }
 
       body {
+        position: relative;
         margin: 0;
         font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-        font-size: 1.15625rem;
+        font-size: clamp(1.05rem, 0.98rem + 0.28vw, 1.16rem);
         background:
           radial-gradient(circle at 15% 10%, rgba(210, 163, 87, 0.14), transparent 42%),
           radial-gradient(circle at 85% 0%, rgba(155, 88, 54, 0.18), transparent 35%),
           linear-gradient(180deg, #110d0a 0%, #17110d 35%, #0f0b08 100%);
         color: var(--text);
-        line-height: 1.78;
-        letter-spacing: 0.008em;
+        line-height: 1.72;
+        letter-spacing: 0.005em;
         text-rendering: optimizeLegibility;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background:
+          linear-gradient(rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02)),
+          radial-gradient(circle at 20% 20%, rgba(210, 163, 87, 0.05), transparent 35%);
+        mix-blend-mode: soft-light;
+        opacity: 0.5;
       }
 
       a {
         color: var(--gold);
         text-underline-offset: 2px;
-        transition: color 160ms ease;
+        text-decoration-color: rgba(210, 163, 87, 0.35);
+        transition: color 160ms ease, text-decoration-color 160ms ease;
       }
 
       button {
@@ -133,24 +148,25 @@
         z-index: 999;
       }
 
-      .skip-link:focus {
+      .skip-link:focus-visible {
         top: 0.5rem;
       }
 
       .frame {
         max-width: var(--content-max);
         margin: 0 auto;
-        padding: 1.25rem;
+        padding: 1.25rem 1.25rem 2rem;
       }
 
       header {
         border: 1px solid var(--line);
         border-radius: var(--radius);
         background:
-          linear-gradient(130deg, rgba(210, 163, 87, 0.12), rgba(33, 26, 21, 0.9) 55%),
+          linear-gradient(130deg, rgba(210, 163, 87, 0.14), rgba(33, 26, 21, 0.86) 55%),
           var(--bg-soft);
-        box-shadow: var(--shadow);
-        padding: 1.75rem;
+        box-shadow: 0 18px 60px rgba(0, 0, 0, 0.32), inset 0 1px 0 rgba(255, 243, 224, 0.05);
+        backdrop-filter: blur(10px);
+        padding: 1.9rem;
       }
 
       .hero-layout {
@@ -167,16 +183,21 @@
 
       .hero-copy {
         min-width: 0;
+        display: grid;
+        gap: 0.7rem;
       }
 
       .hero-motif {
         margin: 0;
         border: 1px solid var(--line);
-        border-radius: 12px;
-        padding: 0.55rem;
-        background: rgba(0, 0, 0, 0.22);
+        border-radius: 18px;
+        padding: 0.7rem;
+        background:
+          linear-gradient(180deg, rgba(255, 243, 224, 0.05), rgba(0, 0, 0, 0.12)),
+          rgba(0, 0, 0, 0.22);
         max-width: 320px;
         justify-self: end;
+        box-shadow: 0 18px 34px rgba(0, 0, 0, 0.24), inset 0 1px 0 rgba(255, 244, 224, 0.05);
       }
 
       .hero-motif img {
@@ -187,9 +208,11 @@
       }
 
       .hero-motif figcaption {
-        margin-top: 0.45rem;
-        font-size: 0.82rem;
-        color: var(--muted);
+        margin-top: 0.65rem;
+        font-size: 0.74rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #d8c3a5;
       }
 
       @media (max-width: 859px) {
@@ -210,35 +233,55 @@
       h1,
       h2,
       h3 {
-        line-height: 1.2;
-        margin: 0.5rem 0 0.7rem;
+        line-height: 1.14;
+        margin: 0 0 0.85rem;
+        text-wrap: balance;
       }
 
       h1 {
         font-size: clamp(2rem, 5vw, 3.4rem);
+        max-width: 12ch;
+      }
+
+      h2 {
+        font-size: clamp(1.35rem, 1.08rem + 0.8vw, 1.9rem);
+      }
+
+      h3 {
+        font-size: clamp(1.08rem, 0.98rem + 0.4vw, 1.35rem);
       }
 
       .subtitle {
         margin: 0;
-        color: var(--muted);
-        max-width: 70ch;
+        color: #e3d4bf;
+        max-width: 60ch;
+        text-wrap: pretty;
       }
 
       main p,
       aside p,
       .edition-card p {
-        max-width: 74ch;
+        max-width: 66ch;
+        text-wrap: pretty;
       }
 
       li {
-        margin-bottom: 0.3rem;
+        margin-bottom: 0.45rem;
       }
 
       .top-nav {
-        margin-top: 0.85rem;
-        padding: 0.55rem 0 0.15rem;
+        margin-top: 1rem;
+        padding: 0.45rem 0.55rem;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(12, 8, 5, 0.62);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(12px);
+        position: sticky;
+        top: 0.75rem;
+        z-index: 20;
       }
 
       .top-nav ul {
@@ -260,23 +303,25 @@
 
       .top-nav a {
         display: inline-block;
-        border: 0;
-        padding: 0.15rem 0;
+        border: 1px solid transparent;
+        border-radius: 999px;
+        padding: 0.35rem 0.8rem;
         text-decoration: none;
         color: var(--muted);
-        border-bottom: 1px solid transparent;
+        background: transparent;
       }
 
       .top-nav a:hover,
       .top-nav a:focus-visible {
         color: var(--gold);
-        border-bottom-color: var(--gold);
+        border-color: rgba(210, 163, 87, 0.35);
+        background: rgba(210, 163, 87, 0.08);
       }
 
       main {
         display: grid;
-        gap: 1.2rem;
-        margin-top: 1.2rem;
+        gap: 1.45rem;
+        margin-top: 1.45rem;
       }
 
       .grid {
@@ -294,13 +339,39 @@
       aside {
         border: 1px solid var(--line);
         border-radius: var(--radius);
-        background: linear-gradient(170deg, rgba(255, 255, 255, 0.02), transparent 50%), var(--panel);
-        padding: 1.15rem;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 28%),
+          linear-gradient(170deg, rgba(255, 255, 255, 0.02), transparent 50%),
+          var(--panel);
+        padding: 1.3rem 1.35rem 1.4rem;
+        box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.025);
+        backdrop-filter: blur(8px);
+      }
+
+      section > :first-child,
+      aside > :first-child {
+        margin-top: 0;
+      }
+
+      section > h2,
+      aside > h2 {
+        padding-bottom: 0.55rem;
+        border-bottom: 1px solid rgba(210, 163, 87, 0.22);
+      }
+
+      .section-intro {
+        margin: -0.15rem 0 1rem;
+        color: #dccab2;
+        max-width: 58ch;
+        font-size: 0.98rem;
       }
 
       .tagline {
         color: #edd9ba;
         font-style: italic;
+        max-width: 32ch;
+        font-size: 1.06rem;
+        line-height: 1.55;
       }
 
       .pill {
@@ -327,8 +398,9 @@
 
       .stat {
         border-left: 3px solid var(--gold);
-        padding-left: 0.75rem;
-        color: var(--muted);
+        padding: 0.1rem 0 0.1rem 0.9rem;
+        color: #dfcfba;
+        font-size: 0.98rem;
       }
 
       .cta-row {
@@ -349,14 +421,31 @@
         display: inline-block;
         border: 1px solid var(--line);
         border-radius: 999px;
-        padding: 0.4rem 0.85rem;
+        padding: 0.5rem 0.95rem;
         text-decoration: none;
-        background: rgba(0, 0, 0, 0.25);
+        background: rgba(0, 0, 0, 0.28);
+        color: #eedabf;
+        box-shadow: inset 0 1px 0 rgba(255, 240, 216, 0.04);
+        transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease;
+      }
+
+      .series-link:hover,
+      .series-link:focus-visible {
+        transform: translateY(-1px);
+        border-color: rgba(210, 163, 87, 0.45);
+        background: rgba(210, 163, 87, 0.1);
       }
 
       .editions-grid {
         display: grid;
         gap: 1.1rem;
+      }
+
+      #editions {
+        background:
+          linear-gradient(180deg, rgba(210, 163, 87, 0.09), transparent 32%),
+          linear-gradient(170deg, rgba(255, 255, 255, 0.02), transparent 50%),
+          var(--panel);
       }
 
       @media (min-width: 860px) {
@@ -368,8 +457,11 @@
       .edition-card {
         border: 1px solid var(--rust);
         border-radius: 12px;
-        padding: 1.1rem;
-        background: linear-gradient(180deg, rgba(210, 163, 87, 0.09), rgba(0, 0, 0, 0.16));
+        padding: 1.2rem;
+        background:
+          linear-gradient(180deg, rgba(210, 163, 87, 0.12), rgba(0, 0, 0, 0.16)),
+          var(--panel-raised);
+        box-shadow: inset 0 1px 0 rgba(255, 244, 224, 0.04);
       }
 
       .kicker {
@@ -389,20 +481,21 @@
         display: inline-flex;
         gap: 0.5rem;
         margin: 0.4rem 0 1rem;
-        padding: 0.2rem;
+        padding: 0.25rem;
         border: 1px solid var(--line);
         border-radius: 999px;
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.32);
       }
 
       .tab-btn {
         border: 1px solid transparent;
         border-radius: 999px;
-        padding: 0.4rem 0.8rem;
+        padding: 0.45rem 0.9rem;
         background: transparent;
         color: var(--muted);
         font: inherit;
         cursor: pointer;
+        transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
       }
 
       .tab-btn[aria-selected="true"] {
@@ -414,15 +507,32 @@
         display: none;
       }
 
+      .view-panel::before {
+        content: "";
+        display: block;
+        width: 4.25rem;
+        height: 1px;
+        margin: 0 0 1rem;
+        background: linear-gradient(90deg, var(--gold), transparent);
+      }
+
       .button {
         display: inline-block;
-        padding: 0.55rem 0.9rem;
+        padding: 0.68rem 1rem;
         border-radius: 0.5rem;
         border: 1px solid var(--gold);
         text-decoration: none;
         color: #23170d;
         background: linear-gradient(180deg, #f3c87d, #d29e4e);
         font-weight: 700;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+        transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+      }
+
+      .button:hover,
+      .button:focus-visible {
+        transform: translateY(-1px);
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.24);
       }
 
       .button.secondary {
@@ -448,20 +558,32 @@
 
       .visual-card {
         border: 1px solid var(--line);
-        border-radius: 12px;
-        background: rgba(0, 0, 0, 0.2);
-        padding: 0.7rem;
+        border-radius: 18px;
+        background:
+          linear-gradient(180deg, rgba(255, 243, 224, 0.04), rgba(0, 0, 0, 0.16)),
+          rgba(0, 0, 0, 0.24);
+        padding: 0.8rem;
         max-width: 360px;
         margin: 0 auto;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.16);
+        transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+      }
+
+      .visual-card:hover {
+        transform: translateY(-2px);
+        border-color: rgba(210, 163, 87, 0.45);
+        box-shadow: 0 20px 36px rgba(0, 0, 0, 0.22);
       }
 
       .visual-thumb {
-        height: 190px;
-        border-radius: 8px;
+        height: 210px;
+        border-radius: 12px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: rgba(0, 0, 0, 0.24);
+        background:
+          linear-gradient(180deg, rgba(255, 243, 224, 0.03), rgba(0, 0, 0, 0.22)),
+          rgba(0, 0, 0, 0.24);
         border: 1px solid var(--line);
         overflow: hidden;
       }
@@ -475,9 +597,12 @@
       }
 
       .visual-card figcaption {
-        margin-top: 0.55rem;
-        font-size: 0.92rem;
-        color: var(--muted);
+        margin-top: 0.7rem;
+        font-size: 0.82rem;
+        line-height: 1.4;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #decbb4;
       }
 
       .footer {
@@ -506,6 +631,54 @@
         margin: 0.4rem 0 0;
         font-size: 0.9rem;
         color: #e6d2b6;
+      }
+
+      @media (max-width: 640px) {
+        .frame {
+          padding: 0.9rem 0.9rem 1.4rem;
+        }
+
+        header,
+        section,
+        aside,
+        .footer {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        .top-nav ul {
+          gap: 0.3rem;
+        }
+
+        .top-nav a,
+        .series-link,
+        .button,
+        .tab-btn {
+          white-space: nowrap;
+        }
+
+        .view-toggle {
+          width: 100%;
+          justify-content: space-between;
+        }
+
+        .tab-btn {
+          flex: 1 1 0;
+          text-align: center;
+        }
+
+        .cta-row {
+          flex-direction: column;
+        }
+
+        .cta-row .button {
+          width: 100%;
+          text-align: center;
+        }
+
+        .visual-thumb {
+          height: 170px;
+        }
       }
 
       @keyframes enterUp {
@@ -578,20 +751,20 @@
       <header>
         <div class="hero-layout">
           <div class="hero-copy">
-            <p class="eyebrow">Historical Drama / Moral Epic</p>
+            <p class="eyebrow">A Cruel Birth / An Empire Answered</p>
             <h1>The Fatherless</h1>
             <p class="subtitle">
-              In a decaying empire, Sael is birthed from his father and his father's mother; that forbidden origin is the
-              crux of the entire story and the wound that drives every conflict that follows.
+              A child is born from a son and his own mother in cruelty by power, but the joke turns back on the
+              society that made it when that child becomes a symbol of its futility.
             </p>
-            <p class="tagline">"You may punish my body, but my spirit forgives."</p>
+            <p class="tagline">"They make him to mock life itself. He answers by becoming the measure that condemns them."</p>
             <div class="series-links" aria-label="Trilogy landing links">
               <a class="series-link" href="./prequel/">Prequel: Age of Embers</a>
               <a class="series-link" href="./sequel/">Sequel: Neurion</a>
             </div>
           </div>
           <figure class="hero-motif">
-            <img src="./assets/motif-forgiveness-symbols.png" alt="Motif concept art showing crown, chains, candles, and olive branch." loading="lazy" />
+            <img src="./assets/motif-forgiveness-symbols.png" alt="Motif concept art showing crown, chains, candles, and olive branch." width="1536" height="1024" />
             <figcaption>Motif Concept: Sin vs Life</figcaption>
           </figure>
         </div>
@@ -613,17 +786,16 @@
         <section id="logline" aria-labelledby="logline-heading">
           <h2 id="logline-heading">Overview</h2>
           <p>
-            The story's central fact is that Sael is birthed from his father and his father's mother, and that this
-            birth is intentional: engineered by a slave owner who alone holds that knowledge. Raised by a persecuted
-            moral cult, Sael grows into a public symbol of life. Across Aurelian society, people are confused and divided
-            over who Sael's father truly is. As slave-master Cassian seeks to erase him, Sael's
-            refusal to return hatred with hatred threatens the empire's entire logic of power.
+            Sael's birth is no accident. A slave master engineers the child from his a slave and his mother as an act of
+            domination and mockery, expecting only shame, secrecy, and spectacle. Instead, the child survives, is raised
+            into mercy, and becomes the one presence the empire cannot explain away. The cruelty meant to prove that
+            power can define life becomes the thing that exposes an entire society as morally diseased.
           </p>
           <p>
-            <span class="pill">Sin vs Life</span>
-            <span class="pill">Engineered Birth</span>
-            <span class="pill">Knowledge as Elite Power</span>
-            <span class="pill">Mercy as Defiance</span>
+            <span class="pill">Cruel Birth Weaponized</span>
+            <span class="pill">Power Tries to Define Life</span>
+            <span class="pill">Hidden Blood, Public Shame</span>
+            <span class="pill">Forgiveness as Judgment</span>
           </p>
         </section>
 
@@ -636,7 +808,7 @@
               <li><strong>Maro:</strong> Envy to confession to redemption.</li>
               <li><strong>Cult Leaders:</strong> Ethical stewards in a hostile regime.</li>
             </ul>
-            <a href="https://github.com/ryjen/the-fatherless/blob/main/characters.md">Full character arcs</a>
+            <a href="https://github.com/ryjen/the-fatherless/blob/main/characters.md">Read the central moral conflict</a>
           </section>
 
           <section id="world" aria-labelledby="world-heading">
@@ -647,7 +819,7 @@
               <li><strong>Cult Shrine:</strong> Candles, symbols, and hidden teachings.</li>
               <li><strong>Avarim Outskirts:</strong> Harsh refuge and fragile freedom.</li>
             </ul>
-            <a href="https://github.com/ryjen/the-fatherless/blob/main/locations.md">View location guide</a>
+            <a href="https://github.com/ryjen/the-fatherless/blob/main/locations.md">See the empire that made the joke</a>
           </section>
         </div>
 
@@ -655,32 +827,33 @@
           <h2 id="analysis-heading">Interpretive Analysis</h2>
           <ul>
             <li>
-              <strong>Knowledge as elite power:</strong> undisclosed relationship between the slaves forced to procreate.
+              <strong>Power hides behind secrecy:</strong> the empire's first weapon is not force, but control over who is
+              allowed to know the truth of Sael's conception.
               (<a href="https://github.com/ryjen/the-fatherless/blob/main/script-outline.md">script outline</a>, <a href="https://github.com/ryjen/the-fatherless/blob/main/scenes/2-slavers-scheme.md">scene 2</a>)
             </li>
             <li>
-              <strong>Miracle of life:</strong> Sael's lack of dyfunction and beauty despite his ill conception shows
-              the spirit of god towards life.
+              <strong>Life refuses the logic of corruption:</strong> Sael's beauty and vitality make the crime that made
+              him look smaller than the life that answers it.
             </li>
             <li>
-              <strong>Lambs of fate:</strong> the view of Sael as abnormal birth means a lack of pity for his
-              execution, but also shows that the public has a moral conscious.
+              <strong>Public cruelty reveals public conscience:</strong> the crowd is taught to see Sael as a stain, yet
+              his death exposes that even a corrupted society still knows it is condemning innocence.
             </li>
             <li>
-              <strong>Myth is politically manufactured:</strong> institutions sanitize origin while dissident memory
+              <strong>Empire rewrites what it cannot justify:</strong> institutions sanitize origin while dissident memory
               preserves moral truth. (<a href="https://github.com/ryjen/the-fatherless/blob/main/screenplay.md">screenplay</a>, <a href="https://github.com/ryjen/the-fatherless/blob/main/drafting/blueprint.md">blueprint notes</a>)
             </li>
             <li>
-              <strong>Forgiveness acts as counter-power:</strong> mercy functions as active resistance, not
-              passivity, but also as a mock of undesired outcomes.
+              <strong>Forgiveness is the counter-power:</strong> mercy functions as active resistance, not passivity, and
+              humiliates domination by refusing its terms.
               (<a href="https://github.com/ryjen/the-fatherless/blob/main/scenes/10-sael-confronts-cassian.md">scene 10</a>, <a href="https://github.com/ryjen/the-fatherless/blob/main/screenplay.md">screenplay</a>)
             </li>
             <li>
-              <strong>Conscience redirects history:</strong> Maro's confession transforms private guilt into public
+              <strong>Confession breaks the machine:</strong> Maro's confession transforms private guilt into public
               consequence. (<a href="https://github.com/ryjen/the-fatherless/blob/main/scenes/3-maros-envy.md">scene 3</a>, <a href="https://github.com/ryjen/the-fatherless/blob/main/scenes/7-maros-confession.md">scene 7</a>)
             </li>
             <li>
-              <strong>Trilogy thesis across ages:</strong> survival (Atuun) -> morality (Sael) -> coexistence
+              <strong>The trilogy escalates one human lesson:</strong> survival (Atuun) -> morality (Sael) -> coexistence
               (Neurion). (<a href="https://github.com/ryjen/the-fatherless/blob/main/prequel/README.md">prequel summary</a>, <a href="https://github.com/ryjen/the-fatherless/blob/main/sequel/README.md">sequel summary</a>)
             </li>
           </ul>
@@ -689,7 +862,7 @@
 
         <section id="editions" aria-labelledby="editions-heading">
           <h2 id="editions-heading">Pitch</h2>
-          <p>
+          <p class="section-intro">
             Decision-ready framing for two buyers: editorial acquisition and screen development.
           </p>
           <div class="view-toggle" role="tablist" aria-label="Pitch perspective">
@@ -720,28 +893,21 @@
               <article class="edition-card" aria-labelledby="editorial-book-heading">
                 <p class="kicker">Literary Package</p>
                 <h3 id="editorial-book-heading">Book</h3>
-                <p>
-                  Prestige historical-moral fiction centered on Sael, Cassian, and Maro, positioned for book-club and
-                  crossover literary audiences.
-                </p>
+                <p>Prestige historical-moral fiction with book-club weight and adaptation runway.</p>
                 <ul class="edition-list">
-                  <li>Audience lane: literary historical fiction + morally driven epic drama readers</li>
-                  <li>Comp lane: readers of conscience-driven historical narratives and anti-empire character arcs</li>
-                  <li>Package status: full outline + screenplay draft + mapped prequel/sequel universe</li>
-                  <li>Ask: request full manuscript treatment based on existing outline package</li>
+                  <li>Lane: literary historical fiction with moral-political stakes</li>
+                  <li>Status: outline, screenplay draft, and trilogy architecture complete</li>
+                  <li>Ask: commission full manuscript treatment</li>
                 </ul>
               </article>
               <article class="edition-card" aria-labelledby="editorial-film-heading">
                 <p class="kicker">Screen Package</p>
                 <h3 id="editorial-film-heading">Screen</h3>
-                <p>
-                  Character-led period drama with strong public set pieces and awards-oriented performance roles.
-                </p>
+                <p>Character-led period drama built around public spectacle and awards-weight roles.</p>
                 <ul class="edition-list">
-                  <li>Audience lane: prestige period-drama viewers with political-moral themes</li>
-                  <li>Format options: feature film first, expandable to limited series</li>
-                  <li>Production profile: contained recurring sets plus event-scale civic sequences</li>
-                  <li>Ask: evaluate for option + treatment-to-script development path</li>
+                  <li>Lane: prestige period drama with political-moral charge</li>
+                  <li>Format: feature first, expandable to limited series</li>
+                  <li>Ask: option and treatment-to-script development</li>
                 </ul>
               </article>
             </div>
@@ -758,27 +924,21 @@
               <article class="edition-card" aria-labelledby="producer-book-heading">
                 <p class="kicker">Publishing Opportunity</p>
                 <h3 id="producer-book-heading">Book</h3>
-                <p>
-                  Commercial-literary package with built-in franchise runway from connected prequel/sequel arcs.
-                </p>
+                <p>Commercial-literary property with built-in trilogy runway.</p>
                 <ul class="edition-list">
                   <li>Positioning: conversation-driving moral epic with adaptation upside</li>
-                  <li>IP depth: trilogy architecture already documented across eras</li>
-                  <li>Rights value: clean adaptation bridge from page to screen materials</li>
-                  <li>Next milestone: commission polished prose treatment for submission round</li>
+                  <li>IP value: mapped cross-era expansion already in place</li>
+                  <li>Next: polished prose treatment for submission</li>
                 </ul>
               </article>
               <article class="edition-card" aria-labelledby="producer-film-heading">
                 <p class="kicker">Production Opportunity</p>
                 <h3 id="producer-film-heading">Screen</h3>
-                <p>
-                  Development-friendly period project with clear protagonist/antagonist engine and high-value public spectacle moments.
-                </p>
+                <p>Development-ready period project with clear conflict engine and crowd-scale set pieces.</p>
                 <ul class="edition-list">
-                  <li>Budget lane: mid-to-upper period drama with scalable crowd sequence design</li>
-                  <li>Format: feature film with optional limited-series expansion</li>
-                  <li>Visual anchor: councils, processions, trial/execution arc, legacy ending</li>
-                  <li>Next step: attach producer + director for lookbook and financing package</li>
+                  <li>Budget: mid-to-upper period drama with scalable spectacle</li>
+                  <li>Format: feature with limited-series upside</li>
+                  <li>Next: attach producer/director for lookbook and finance package</li>
                 </ul>
               </article>
             </div>
@@ -819,37 +979,37 @@
           <div class="visual-grid">
             <figure class="visual-card">
               <div class="visual-thumb">
-                <img src="./assets/hero-aurelia-skyline.png" alt="Hero concept: torchlit Aurelia skyline at dusk." loading="lazy" />
+                <img src="./assets/hero-aurelia-skyline.png" alt="Hero concept: torchlit Aurelia skyline at dusk." width="1536" height="1024" loading="lazy" />
               </div>
               <figcaption>Hero Banner Concept: Aurelia skyline at dusk</figcaption>
             </figure>
             <figure class="visual-card">
               <div class="visual-thumb">
-                <img src="./assets/poster-sael.png" alt="Character poster concept for Sael." loading="lazy" />
+                <img src="./assets/poster-sael.png" alt="Character poster concept for Sael." width="1024" height="1536" loading="lazy" />
               </div>
               <figcaption>Character Poster: Sael</figcaption>
             </figure>
             <figure class="visual-card">
               <div class="visual-thumb">
-                <img src="./assets/poster-cassian.png" alt="Character poster concept for Cassian." loading="lazy" />
+                <img src="./assets/poster-cassian.png" alt="Character poster concept for Cassian." width="1024" height="1536" loading="lazy" />
               </div>
               <figcaption>Character Poster: Cassian</figcaption>
             </figure>
             <figure class="visual-card">
               <div class="visual-thumb">
-                <img src="./assets/poster-maro.png" alt="Character poster concept for Maro." loading="lazy" />
+                <img src="./assets/poster-maro.png" alt="Character poster concept for Maro." width="1024" height="1536" loading="lazy" />
               </div>
               <figcaption>Character Poster: Maro</figcaption>
             </figure>
             <figure class="visual-card">
               <div class="visual-thumb">
-                <img src="./assets/map-aurelia-world.png" alt="Illustrated map concept of Aurelia and surrounding regions." loading="lazy" />
+                <img src="./assets/map-aurelia-world.png" alt="Illustrated map concept of Aurelia and surrounding regions." width="1536" height="1024" loading="lazy" />
               </div>
               <figcaption>World Map Concept</figcaption>
             </figure>
             <figure class="visual-card">
               <div class="visual-thumb">
-                <img src="./assets/motif-forgiveness-symbols.png" alt="Symbolic motif concept with crown, chains, candles, and olive branch." loading="lazy" />
+                <img src="./assets/motif-forgiveness-symbols.png" alt="Symbolic motif concept with crown, chains, candles, and olive branch." width="1536" height="1024" loading="lazy" />
               </div>
               <figcaption>Motif Art: Sin vs Life</figcaption>
             </figure>
@@ -869,7 +1029,7 @@
             <li><a href="./prequel/">Prequel</a></li>
             <li><a href="./sequel/">Sequel</a></li>
             <li><a href="https://github.com/ryjen/the-fatherless/blob/main/history.md">Historical context and political backdrop</a></li>
-            <li><a href="../scenes/">Scene-by-scene structure</a></li>
+            <li><a href="https://github.com/ryjen/the-fatherless/tree/main/scenes">Scene-by-scene structure</a></li>
           </ul>
         </aside>
       </main>
