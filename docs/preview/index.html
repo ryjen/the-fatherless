@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #17100d;
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+
+      body {
+        color: #efe0c2;
+      }
+
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        transform-origin: top left;
+        background:
+          radial-gradient(circle at 18% 24%, rgba(200, 139, 63, 0.22), rgba(23, 16, 13, 0) 32%),
+          radial-gradient(circle at 82% 70%, rgba(143, 47, 36, 0.18), rgba(23, 16, 13, 0) 30%),
+          #17100d;
+      }
+
+      .clip {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+      }
+
+      .scene {
+        background-color: #17100d;
+        opacity: 0;
+      }
+
+      #scene-1 {
+        opacity: 1;
+      }
+
+      .scene-content {
+        position: relative;
+        z-index: 4;
+        width: 100%;
+        height: 100%;
+        padding: 104px 128px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 34px;
+        box-sizing: border-box;
+      }
+
+      .scene::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        background:
+          linear-gradient(90deg, rgba(23, 16, 13, 0.92), rgba(23, 16, 13, 0.52) 42%, rgba(23, 16, 13, 0.1)),
+          radial-gradient(circle at 70% 42%, rgba(200, 139, 63, 0.16), rgba(23, 16, 13, 0) 34%);
+        pointer-events: none;
+      }
+
+      .scene::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 5;
+        opacity: 0.18;
+        background-image:
+          linear-gradient(rgba(239, 224, 194, 0.08) 1px, rgba(239, 224, 194, 0) 1px),
+          linear-gradient(90deg, rgba(239, 224, 194, 0.055) 1px, rgba(239, 224, 194, 0) 1px);
+        background-size: 72px 72px;
+        mix-blend-mode: soft-light;
+        pointer-events: none;
+      }
+
+      .image-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(0.9) contrast(1.08) brightness(0.74);
+        transform-origin: center;
+      }
+
+      .eyebrow {
+        max-width: 980px;
+        font-family: "Azeret Mono", monospace;
+        font-size: 22px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #f0c374;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .eyebrow::before {
+        content: attr(data-label);
+      }
+
+      h1,
+      h2 {
+        max-width: 1040px;
+        font-family: "Fraunces", serif;
+        font-weight: 900;
+        line-height: 0.9;
+        letter-spacing: 0.01em;
+        color: #f4e7c8;
+        text-wrap: balance;
+      }
+
+      h1 {
+        font-size: 156px;
+      }
+
+      h2 {
+        font-size: 104px;
+      }
+
+      .copy {
+        max-width: 770px;
+        font-size: 34px;
+        line-height: 1.25;
+        font-weight: 350;
+        color: #e7d3ad;
+      }
+
+      .quote {
+        max-width: 1020px;
+        font-family: "Fraunces", serif;
+        font-size: 68px;
+        line-height: 1.02;
+        font-weight: 760;
+        color: #efe0c2;
+        text-wrap: balance;
+      }
+
+      .small-note {
+        max-width: 720px;
+        font-size: 26px;
+        line-height: 1.28;
+        color: #cdbb96;
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        align-items: center;
+        gap: 78px;
+      }
+
+      .portrait-row {
+        display: flex;
+        gap: 28px;
+        align-items: stretch;
+      }
+
+      .portrait {
+        width: 285px;
+        height: 430px;
+        border: 1px solid rgba(239, 224, 194, 0.28);
+        background: #241812;
+        overflow: hidden;
+        box-shadow: 0 28px 80px rgba(0, 0, 0, 0.46);
+      }
+
+      .portrait img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(0.92) contrast(1.08);
+      }
+
+      .portrait strong {
+        position: absolute;
+        left: 18px;
+        bottom: 18px;
+        font-family: "Azeret Mono", monospace;
+        font-size: 18px;
+        letter-spacing: 0.08em;
+        color: #efe0c2;
+        text-transform: uppercase;
+      }
+
+      .portrait-wrap {
+        position: relative;
+      }
+
+      .ledger {
+        display: grid;
+        grid-template-columns: 160px minmax(0, 1fr);
+        gap: 16px 28px;
+        max-width: 760px;
+        font-family: "Azeret Mono", monospace;
+        font-size: 23px;
+        line-height: 1.22;
+        color: #d7c59e;
+      }
+
+      .ledger .key {
+        color: #c88b3f;
+      }
+
+      .route {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        max-width: 1000px;
+        font-family: "Azeret Mono", monospace;
+        font-size: 24px;
+        color: #efe0c2;
+        text-transform: uppercase;
+      }
+
+      .route span {
+        padding: 16px 18px;
+        border: 1px solid rgba(200, 139, 63, 0.56);
+        background: rgba(23, 16, 13, 0.62);
+      }
+
+      .route i {
+        width: 70px;
+        height: 1px;
+        background: #c88b3f;
+      }
+
+      .artifact {
+        width: 620px;
+        height: 620px;
+        border: 1px solid rgba(200, 139, 63, 0.35);
+        overflow: hidden;
+        box-shadow: 0 36px 90px rgba(0, 0, 0, 0.42);
+      }
+
+      .artifact img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(0.88) contrast(1.12) brightness(0.84);
+      }
+
+      .ghost-word {
+        position: absolute;
+        z-index: 3;
+        right: -40px;
+        bottom: 52px;
+        font-family: "Fraunces", serif;
+        font-size: 190px;
+        line-height: 0.8;
+        color: rgba(239, 224, 194, 0.055);
+        font-weight: 900;
+        letter-spacing: 0.01em;
+        pointer-events: none;
+      }
+
+      .ghost-word::before {
+        content: attr(data-word);
+      }
+
+      .hairline {
+        width: 520px;
+        height: 2px;
+        background: #c88b3f;
+        transform-origin: left center;
+      }
+
+      .transition {
+        z-index: 30;
+        pointer-events: none;
+      }
+
+      .veil-panel {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 25.2%;
+        background: #17100d;
+        transform-origin: left center;
+        box-shadow: inset 1px 0 0 rgba(200, 139, 63, 0.24);
+      }
+
+      .veil-panel:nth-child(1) {
+        left: 0;
+      }
+
+      .veil-panel:nth-child(2) {
+        left: 25%;
+      }
+
+      .veil-panel:nth-child(3) {
+        left: 50%;
+      }
+
+      .veil-panel:nth-child(4) {
+        left: 75%;
+      }
+
+      .final-dim {
+        z-index: 35;
+        background: #17100d;
+        opacity: 0;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="30"
+      data-width="1920"
+      data-height="1080"
+    >
+      <section id="scene-1" class="clip scene" data-start="0" data-duration="5.05" data-track-index="1">
+        <img class="image-bg" src="assets/hero-aurelia-skyline.png" alt="" />
+        <div class="ghost-word" data-word="AURELIA"></div>
+        <div class="scene-content">
+          <div class="eyebrow" data-label="Moral epic / historical drama"></div>
+          <h1>The Fatherless</h1>
+          <div class="hairline"></div>
+          <p class="copy">In a city built on power, one child becomes proof that cruelty cannot own the future.</p>
+        </div>
+      </section>
+
+      <section id="scene-2" class="clip scene" data-start="4.4" data-duration="5.0" data-track-index="2">
+        <img class="image-bg" src="assets/poster-cassian.png" alt="" />
+        <div class="ghost-word" data-word="PLOT"></div>
+        <div class="scene-content split">
+          <div>
+            <div class="eyebrow" data-label="Act I / Seeds of cruelty"></div>
+            <h2>Cassian turns innocence into a scheme.</h2>
+          </div>
+          <div class="ledger">
+            <div class="key">01</div>
+            <div>Slave records become weapons.</div>
+            <div class="key">02</div>
+            <div>A hidden birth is arranged to blame the evils of society.</div>
+            <div class="key">03</div>
+            <div>The plan creates the symbol Cassian cannot control.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="scene-3" class="clip scene" data-start="9.2" data-duration="5.0" data-track-index="1">
+        <div class="image-bg" style="background: radial-gradient(circle at 58% 44%, rgba(200, 139, 63, 0.2), rgba(23, 16, 13, 0) 32%), #17100d"></div>
+        <div class="ghost-word" data-word="CHOICE"></div>
+        <div class="scene-content split">
+          <div class="portrait-row">
+            <div class="portrait-wrap portrait-one">
+              <div class="portrait"><img src="assets/poster-sael.png" alt="" /></div>
+              <strong>Sael</strong>
+            </div>
+            <div class="portrait-wrap portrait-two">
+              <div class="portrait"><img src="assets/poster-maro.png" alt="" /></div>
+              <strong>Maro</strong>
+            </div>
+          </div>
+          <div>
+            <div class="eyebrow" data-label="Act II / Moral formation"></div>
+            <p class="quote">A secret birth becomes a public conscience.</p>
+            <p class="small-note">Maro's envy turns to confession. Sael is raised outside Aurelia, taught that forgiveness can challenge empire without becoming empire.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="scene-4" class="clip scene" data-start="14.0" data-duration="5.0" data-track-index="2">
+        <img class="image-bg" src="assets/map-aurelia-world.png" alt="" />
+        <div class="ghost-word" data-word="EXILE"></div>
+        <div class="scene-content">
+          <div class="eyebrow" data-label="The road away from Aurelia"></div>
+          <h2>The child leaves the palace shadow.</h2>
+          <div class="route">
+            <span>Slave quarters</span>
+            <i></i>
+            <span>Cult shrine</span>
+            <i></i>
+            <span>Avarim outskirts</span>
+          </div>
+          <p class="copy">The empire loses possession of the story. The outskirts become the place where mercy learns a voice.</p>
+        </div>
+      </section>
+
+      <section id="scene-5" class="clip scene" data-start="18.8" data-duration="5.0" data-track-index="1">
+        <img class="image-bg" src="assets/motif-forgiveness-symbols.png" alt="" />
+        <div class="ghost-word" data-word="MERCY"></div>
+        <div class="scene-content split">
+          <div>
+            <div class="eyebrow" data-label="Acts III-IV / Public trial"></div>
+            <h2>Power demands a spectacle.</h2>
+            <p class="copy">Sael answers with forgiveness, turning punishment into the empire's indictment.</p>
+          </div>
+          <p class="quote">"Let mercy guide your hearts."</p>
+        </div>
+      </section>
+
+      <section id="scene-6" class="clip scene" data-start="23.6" data-duration="6.4" data-track-index="2">
+        <img class="image-bg" src="assets/hero-aurelia-legacy.png" alt="" />
+        <div class="ghost-word" data-word="LEGACY"></div>
+        <div class="scene-content">
+          <div class="eyebrow" data-label="After the cross / before the future"></div>
+          <h2>The body is punished. The story survives.</h2>
+          <div class="hairline"></div>
+          <p class="copy">Children carry the song, cult leaders keep the teaching alive, and Cassian is left with a city he can no longer command.</p>
+        </div>
+      </section>
+
+      <div id="transition-1" class="clip transition" data-start="4.25" data-duration="0.82" data-track-index="20">
+        <div class="veil-panel"></div><div class="veil-panel"></div><div class="veil-panel"></div><div class="veil-panel"></div>
+      </div>
+      <div id="transition-2" class="clip transition" data-start="9.05" data-duration="0.82" data-track-index="21">
+        <div class="veil-panel"></div><div class="veil-panel"></div><div class="veil-panel"></div><div class="veil-panel"></div>
+      </div>
+      <div id="transition-3" class="clip transition" data-start="13.85" data-duration="0.82" data-track-index="22">
+        <div class="veil-panel"></div><div class="veil-panel"></div><div class="veil-panel"></div><div class="veil-panel"></div>
+      </div>
+      <div id="transition-4" class="clip transition" data-start="18.65" data-duration="0.82" data-track-index="23">
+        <div class="veil-panel"></div><div class="veil-panel"></div><div class="veil-panel"></div><div class="veil-panel"></div>
+      </div>
+      <div id="transition-5" class="clip transition" data-start="23.45" data-duration="0.82" data-track-index="24">
+        <div class="veil-panel"></div><div class="veil-panel"></div><div class="veil-panel"></div><div class="veil-panel"></div>
+      </div>
+      <div id="final-dim" class="clip final-dim" data-start="28.8" data-duration="1.2" data-track-index="30"></div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      function fitRoot() {
+        const root = document.getElementById("root");
+        const scale = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+        root.style.transform = "scale(" + scale + ")";
+      }
+
+      window.addEventListener("resize", fitRoot);
+      fitRoot();
+
+      function has(selector) {
+        return document.querySelector(selector);
+      }
+
+      function fromIf(selector, vars, at) {
+        if (has(selector)) {
+          tl.from(selector, vars, at);
+        }
+      }
+
+      function hideSceneText(id, at) {
+        const base = "#" + id;
+        tl.set(
+          base + " .scene-content *, " + base + " .ghost-word, " + base + " .ledger > *, " + base + " .route span",
+          { opacity: 0 },
+          at,
+        );
+      }
+
+      function enterScene(id, at) {
+        const base = "#" + id;
+        tl.set(base, { opacity: 1 }, at);
+        fromIf(base + " .image-bg", { scale: 1.08, opacity: 0.6, duration: 1.4, ease: "sine.out" }, at + 0.12);
+        fromIf(base + " .eyebrow", { y: 34, opacity: 0, duration: 0.46, ease: "power3.out" }, at + 0.24);
+        fromIf(base + " h1, " + base + " h2", { y: 62, opacity: 0, duration: 0.68, ease: "expo.out" }, at + 0.38);
+        fromIf(base + " .copy, " + base + " .small-note", { y: 36, opacity: 0, duration: 0.52, ease: "back.out(1.15)" }, at + 0.66);
+        fromIf(base + " .hairline", { scaleX: 0, opacity: 0, duration: 0.58, ease: "power2.out" }, at + 0.58);
+        fromIf(base + " .quote", { x: 48, opacity: 0, duration: 0.62, ease: "circ.out" }, at + 0.56);
+        fromIf(base + " .ghost-word", { x: 90, opacity: 0, duration: 1.0, ease: "sine.out" }, at + 0.18);
+      }
+
+      enterScene("scene-1", 0);
+      enterScene("scene-2", 4.4);
+      enterScene("scene-3", 9.2);
+      enterScene("scene-4", 14.0);
+      enterScene("scene-5", 18.8);
+      enterScene("scene-6", 23.6);
+
+      hideSceneText("scene-1", 5.08);
+      hideSceneText("scene-2", 9.88);
+      hideSceneText("scene-3", 14.68);
+      hideSceneText("scene-4", 19.48);
+      hideSceneText("scene-5", 24.28);
+      tl.set("#scene-1", { opacity: 0 }, 5.08);
+      tl.set("#scene-2", { opacity: 0 }, 9.88);
+      tl.set("#scene-3", { opacity: 0 }, 14.68);
+      tl.set("#scene-4", { opacity: 0 }, 19.48);
+      tl.set("#scene-5", { opacity: 0 }, 24.28);
+
+      tl.from("#scene-2 .ledger > *", { y: 26, opacity: 0, duration: 0.42, stagger: 0.055, ease: "power2.out" }, 5.05);
+      tl.from("#scene-3 .portrait-one", { y: 58, rotation: -2, opacity: 0, duration: 0.66, ease: "power4.out" }, 9.8);
+      tl.from("#scene-3 .portrait-two", { y: -46, rotation: 2, opacity: 0, duration: 0.66, ease: "elastic.out(1, 0.8)" }, 10.0);
+      tl.from("#scene-4 .route span", { y: 28, opacity: 0, duration: 0.48, stagger: 0.12, ease: "power3.out" }, 14.92);
+      tl.from("#scene-4 .route i", { scaleX: 0, opacity: 0, duration: 0.46, stagger: 0.12, ease: "power1.out" }, 15.04);
+
+      ["transition-1", "transition-2", "transition-3", "transition-4", "transition-5"].forEach((id) => {
+        const start = Number(document.getElementById(id).dataset.start);
+        tl.from("#" + id + " .veil-panel", { scaleX: 0, duration: 0.28, stagger: 0.045, ease: "power3.in" }, start);
+        tl.to("#" + id + " .veil-panel", { scaleX: 0, duration: 0.34, stagger: 0.045, ease: "power3.out" }, start + 0.42);
+      });
+
+      tl.to("#scene-6 .image-bg", { scale: 1.04, duration: 5.0, ease: "sine.inOut" }, 24.2);
+      tl.to("#final-dim", { opacity: 1, duration: 1.0, ease: "sine.inOut" }, 29.0);
+      window.__timelines["main"] = tl;
+
+      tl.eventCallback("onComplete", function () {
+        tl.restart();
+      });
+      tl.play(0);
+    </script>
+  </body>
+</html>

@@ -271,9 +271,7 @@
 
       .top-nav {
         margin-top: 1rem;
-        padding: 0.45rem 0.55rem;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+        padding: 0.35rem;
         border: 1px solid var(--line);
         border-radius: 999px;
         background: rgba(12, 8, 5, 0.62);
@@ -287,28 +285,34 @@
       .top-nav ul {
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-around;
-        gap: 0.35rem 0.8rem;
+        justify-content: space-between;
+        gap: clamp(0.08rem, 0.7vw, 0.45rem);
         margin: 0;
         padding: 0;
         list-style: none;
-        min-width: max-content;
+        width: 100%;
       }
 
       .top-nav li {
         display: block;
-        flex: 0 0 auto;
+        flex: 1 1 0;
+        min-width: 0;
         text-align: center;
       }
 
       .top-nav a {
-        display: inline-block;
+        display: block;
         border: 1px solid transparent;
         border-radius: 999px;
-        padding: 0.35rem 0.8rem;
+        padding: 0.35rem clamp(0.18rem, 0.9vw, 0.72rem);
         text-decoration: none;
         color: var(--muted);
         background: transparent;
+        font-size: clamp(0.58rem, 1.35vw, 1rem);
+        line-height: 1.15;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       .top-nav a:hover,
@@ -545,6 +549,44 @@
         padding-left: 1rem;
       }
 
+      .preview-stage {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .preview-frame {
+        position: relative;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        border: 1px solid rgba(210, 163, 87, 0.35);
+        border-radius: 14px;
+        background:
+          linear-gradient(180deg, rgba(255, 243, 224, 0.05), rgba(0, 0, 0, 0.18)),
+          #0f0b08;
+        box-shadow: 0 22px 50px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 244, 224, 0.04);
+      }
+
+      .preview-frame iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        background: #17100d;
+      }
+
+      .preview-meta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+      }
+
+      .preview-meta p {
+        margin: 0;
+        color: #dccab2;
+      }
+
       .visual-grid {
         display: grid;
         gap: 1rem;
@@ -650,7 +692,6 @@
           gap: 0.3rem;
         }
 
-        .top-nav a,
         .series-link,
         .button,
         .tab-btn {
@@ -754,10 +795,10 @@
             <p class="eyebrow">A Cruel Birth / An Empire Answered</p>
             <h1>The Fatherless</h1>
             <p class="subtitle">
-              A child is born from a son and his own mother in cruelty by power, but the joke turns back on the
+              A child is born from a son and his own mother - a cruel transfer of blame.  The attempt turns back on the
               society that made it when that child becomes a symbol of its futility.
             </p>
-            <p class="tagline">"They make him to mock life itself. He answers by becoming the measure that condemns them."</p>
+            <p class="tagline">"They make him to mock the poor instead. He answers by becoming the measure that condemns them."</p>
             <div class="series-links" aria-label="Trilogy landing links">
               <a class="series-link" href="./prequel/">Prequel: Age of Embers</a>
               <a class="series-link" href="./sequel/">Sequel: Neurion</a>
@@ -772,6 +813,7 @@
       <nav class="top-nav" aria-label="Primary">
         <ul>
           <li><a href="#logline">Overview</a></li>
+          <li><a href="#preview">Preview</a></li>
           <li><a href="#characters">Characters</a></li>
           <li><a href="#world">World</a></li>
           <li><a href="#analysis">Interpretive Analysis</a></li>
@@ -783,11 +825,29 @@
       </nav>
 
       <main id="main-content">
+        <section id="preview" aria-labelledby="preview-heading">
+          <h2 id="preview-heading">Story Preview</h2>
+          <div class="preview-stage">
+            <div class="preview-frame">
+              <iframe
+                src="./preview/"
+                title="The Fatherless HyperFrames story preview"
+                loading="lazy"
+                allow="fullscreen"
+              ></iframe>
+            </div>
+            <div class="preview-meta">
+              <p>A 30-second HyperFrames motion preview of the story arc from Aurelia to Sael's legacy.</p>
+              <a class="button secondary" href="./preview/">Open Preview</a>
+            </div>
+          </div>
+        </section>
+
         <section id="logline" aria-labelledby="logline-heading">
           <h2 id="logline-heading">Overview</h2>
           <p>
             Sael's birth is no accident. A slave master engineers the child from a slave and his mother as an act of
-            domination and mockery, expecting only shame, secrecy, and spectacle. Instead, the child survives, is raised
+            domination.  He attempted to relieve blame on the ruling elite for their indulgence and lack of morals. Instead, the child survives, is raised
             into mercy, and becomes the one presence the empire cannot explain away. The cruelty meant to prove that
             power can define life becomes the thing that exposes an entire society as morally diseased.
           </p>
